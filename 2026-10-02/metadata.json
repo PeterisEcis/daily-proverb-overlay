@@ -68,7 +68,7 @@
     "credit_line": "Gene Autry, NPG 94 39 · Harry Warnecke / Robert F. Cranston · Public domain"
   },
   "render": {
-    "font": "C:\\Windows\\Fonts\\segoeui.ttf",
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
     "quote_font_size": 122,
     "quote_lines": 2,
     "width": 1920,
