@@ -1,9 +1,14 @@
 # Local notes
 TODO.md
 
-# Generated output. A published subset gets committed back to the repo on a
-# schedule later; until that decision is made, keep local runs out of git.
-output/
+# Generated output. The scheduled workflow commits each day's folder -- the
+# archive lives in the repo -- minus the downloaded source image, which is only
+# a cache, and temp files left by an interrupted run.
+output/*/source.*
+output/**/.*.part*
+
+# The Pages site is rebuilt from output/ on every run and never committed.
+_site/
 
 # Python
 __pycache__/

@@ -1,0 +1,94 @@
+name: Daily overlay
+
+on:
+  schedule:
+    # 00:17 UTC every day. Commons schedules the POTD by UTC day, and an
+    # off-the-hour minute avoids the top-of-the-hour rush, when GitHub delays
+    # (and occasionally drops) scheduled runs.
+    - cron: "17 0 * * *"
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Day to render, YYYY-MM-DD. Blank means today (UTC)."
+        required: false
+        default: ""
+      force:
+        description: "Rebuild the day even if it is already complete"
+        type: boolean
+        default: false
+
+# Two runs at once would both try to push to main. Queue them instead.
+concurrency:
+  group: daily-overlay
+  cancel-in-progress: false
+
+# Nothing by default; each job asks for exactly what it needs.
+permissions: {}
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # push the day's output back to the repo
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          # Reuses downloaded packages between runs; the key changes whenever
+          # pyproject.toml does, so new dependencies are never served stale.
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - name: Install
+        run: pip install .
+
+      - name: Render the day
+        env:
+          POTD_CONTACT: ${{ vars.POTD_CONTACT }}
+          POTD_GOOGLE_TRANSLATE_API_KEY: ${{ secrets.POTD_GOOGLE_TRANSLATE_API_KEY }}
+          # Inputs reach the script through env, never pasted into `run:`
+          # directly: text substituted into a script is executed as shell code.
+          INPUT_DATE: ${{ inputs.date }}
+          INPUT_FORCE: ${{ inputs.force }}
+        run: |
+          args=()
+          if [ -n "$INPUT_DATE" ]; then args+=(--date "$INPUT_DATE"); fi
+          if [ "$INPUT_FORCE" = "true" ]; then args+=(--force); fi
+          daily-proverb-overlay "${args[@]}"
+
+      - name: Commit the output
+        env:
+          INPUT_DATE: ${{ inputs.date }}
+        run: |
+          git add output/
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit: the day was already complete."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Daily overlay for ${INPUT_DATE:-$(date -u +%F)}"
+          # A push may have landed while this ran. The commit only adds a new
+          # date folder, so rebasing onto it cannot conflict.
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"
+
+      - name: Build the site
+        run: daily-proverb-site
+
+      - uses: actions/upload-pages-artifact@v5
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write # publish the site
+      id-token: write # prove to Pages that the upload came from this repo's workflow
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

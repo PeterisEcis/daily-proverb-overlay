@@ -24,6 +24,7 @@ dev = [
 
 [project.scripts]
 daily-proverb-overlay = "daily_proverb_overlay.cli:main"
+daily-proverb-site = "daily_proverb_overlay.site_builder:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

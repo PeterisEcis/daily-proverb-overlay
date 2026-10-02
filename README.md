@@ -74,6 +74,35 @@ Output lands in `output/YYYY-MM-DD/`:
 | `attribution.txt` | Full credit text. Publish this *with* the image. |
 | `metadata.json` | Machine-readable record of the run, for the archive later. |
 
+## Deployment
+
+[`.github/workflows/daily.yml`](.github/workflows/daily.yml) runs the job every day
+at 00:17 UTC on GitHub's machines, commits the new `output/YYYY-MM-DD/` folder back
+to `main`, rebuilds the site and publishes it to GitHub Pages:
+<https://peterisecis.github.io/daily-proverb-overlay/>
+
+It needs, under the repository's *Settings*:
+
+| Where | What |
+| --- | --- |
+| Pages → Build and deployment → Source | **GitHub Actions** |
+| Secrets and variables → Actions → Secrets | `POTD_GOOGLE_TRANSLATE_API_KEY` |
+| Secrets and variables → Actions → Variables | `POTD_CONTACT` (the repo URL keeps your email out of public logs) |
+
+To run it by hand, open the *Actions* tab → *Daily overlay* → *Run workflow*. It
+takes an optional date and a *force* switch, same as the CLI flags.
+
+The site is plain static HTML, built from `output/` by a second command:
+
+```powershell
+daily-proverb-site              # output/ → _site/, rebuilt from scratch
+```
+
+Open `_site/index.html` in a browser to preview it locally.
+
+The archive lives in the repo, so `output/` is committed — except `source.*`, the
+downloaded original, which is only a cache. Each day adds about 1 MB.
+
 ## Structure
 
 ```
@@ -85,6 +114,7 @@ src/daily_proverb_overlay/
 ├── http_client.py    retry-safe GETs with a policy-compliant User-Agent
 ├── attribution.py    Commons metadata → credit line and full attribution text
 ├── storage.py        output paths, atomic writes, the idempotency check
+├── site_builder.py   output/ → the static archive site (daily-proverb-site)
 ├── sources/
 │   ├── wikimedia.py  Commons API → PictureOfTheDay
 │   ├── wiktionary.py Category:English proverbs → one proverb per day
