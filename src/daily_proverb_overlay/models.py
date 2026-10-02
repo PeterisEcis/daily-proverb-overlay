@@ -48,6 +48,16 @@ class PictureOfTheDay:
 
 
 @dataclass(frozen=True)
+class TranslationStep:
+    """One hop of the translation chain: the text after translating into `language`."""
+
+    language: str
+    """Target language code as the translation API spells it, e.g. `ja`."""
+
+    text: str
+
+
+@dataclass(frozen=True)
 class Quote:
     """The text burned onto the image.
 
@@ -60,6 +70,12 @@ class Quote:
     source: str | None = None
     provider: str = "unknown"
     """Which QuoteProvider produced this, recorded in the output metadata."""
+
+    original_text: str | None = None
+    """The text before the translation chain got to it; None if untranslated."""
+
+    translations: tuple[TranslationStep, ...] = ()
+    """Every hop of the chain in order. The last one's text is `text`."""
 
     @property
     def is_placeholder(self) -> bool:

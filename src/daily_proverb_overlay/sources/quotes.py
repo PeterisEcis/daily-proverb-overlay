@@ -1,24 +1,28 @@
 """Where the overlay text comes from.
 
-Only placeholder text for now. `QuoteProvider` exists so that swapping in a real
-source later is an additive change: write a class with a `fetch()` method,
-register it in `_PROVIDERS`, and the rest of the pipeline is untouched. That
-swap is a later job, once the new provider needs an API key and therefore a
-secret.
+`QuoteProvider` keeps sources swappable: write a class with a `fetch()` method,
+register a factory for it in `_PROVIDERS`, and the rest of the pipeline is
+untouched. Two are registered:
 
-The placeholder is seeded by date rather than random, which matters more than it
-looks: rerunning the job for the same day produces identical text, so the
-idempotency check in `storage.py` is actually verifiable.
+* `wiktionary` (the default) -- a real proverb, see `sources/wiktionary.py`.
+* `lorem` -- placeholder filler that needs no network, for working offline.
+
+Both are deterministic for a given date, which matters more than it looks:
+rerunning the job for the same day produces the same text, so the idempotency
+check in `storage.py` is actually verifiable.
 """
 
 from __future__ import annotations
 
 import logging
 import random
+from collections.abc import Callable
 from datetime import date
 from typing import Protocol, runtime_checkable
 
+from daily_proverb_overlay.http_client import HttpClient
 from daily_proverb_overlay.models import Quote
+from daily_proverb_overlay.sources.wiktionary import WiktionaryProverbProvider
 
 log = logging.getLogger(__name__)
 
@@ -39,7 +43,7 @@ class QuoteProvider(Protocol):
 
 
 class LoremIpsumProvider:
-    """Filler text, until a real quote source is chosen.
+    """Filler text, for running without the network.
 
     Deliberately obvious as a placeholder: the author reads `Lorem Ipsum`, and
     `Quote.is_placeholder` is True, so nothing accidentally gets published as
@@ -79,8 +83,9 @@ class LoremIpsumProvider:
         )
 
 
-_PROVIDERS: dict[str, type] = {
-    LoremIpsumProvider.name: LoremIpsumProvider,
+_PROVIDERS: dict[str, Callable[[HttpClient], QuoteProvider]] = {
+    LoremIpsumProvider.name: lambda http: LoremIpsumProvider(),
+    WiktionaryProverbProvider.name: WiktionaryProverbProvider,
 }
 
 
@@ -89,15 +94,15 @@ def available_providers() -> tuple[str, ...]:
     return tuple(sorted(_PROVIDERS))
 
 
-def get_quote_provider(name: str, **kwargs: object) -> QuoteProvider:
-    """Look up a provider by name.
+def get_quote_provider(name: str, http: HttpClient) -> QuoteProvider:
+    """Look up a provider by name and build it.
 
     Raises:
         KeyError: if `name` is not registered.
     """
     try:
-        provider_class = _PROVIDERS[name]
+        factory = _PROVIDERS[name]
     except KeyError:
         known = ", ".join(available_providers())
         raise KeyError(f"unknown quote provider {name!r}; available: {known}") from None
-    return provider_class(**kwargs)  # type: ignore[no-any-return]
+    return factory(http)

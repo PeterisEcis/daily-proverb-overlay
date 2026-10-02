@@ -1,13 +1,16 @@
 # Daily Proverb Overlay
 
-Fetches the Wikimedia Commons Picture of the Day, composites a quote onto it, and
-writes the image alongside the attribution its license requires.
+Fetches the Wikimedia Commons Picture of the Day, picks an English proverb from
+Wiktionary, runs it through a chain of machine translations until it comes back
+garbled, and composites the result onto the image — with the original proverb
+underneath, and the attribution the image's license requires alongside.
+
+The default chain is English → Japanese → Swahili → Georgian → Finnish → Chinese →
+Basque → Malagasy → Thai → English: eight unrelated language families, each
+dropping something English needs to get back (articles, plurals, gendered
+pronouns, tense, word order).
 
 Currently a local script: there is no pipeline or deployment yet.
-
-> **The overlay text is placeholder Lorem Ipsum.** The quote source is not chosen
-> yet, so `LoremIpsumProvider` fills in. Output is marked
-> `"is_placeholder": true` in `metadata.json` and the CLI says so on every run.
 
 ## Install
 
@@ -19,21 +22,48 @@ pip install -e ".[dev]"
 
 ## Run
 
-Wikimedia's User-Agent policy requires a descriptive agent with a way to reach
-the operator; requests without one get blocked. Set it once per session:
+Settings live in a `.env` file in the directory you run from. Start one from the
+template, which lists every variable with its default:
 
 ```powershell
-$env:POTD_CONTACT = "https://github.com/<you>/daily-proverb-overlay"
+Copy-Item .env.example .env
 ```
+
+`.env` is gitignored. Real environment variables override it and CLI flags
+override both, so CI can provide the same names as secrets with no file at all.
+
+Two values need filling in:
+
+- **`POTD_CONTACT`** — a repo URL or email. Wikimedia's User-Agent policy requires
+  a descriptive agent with a way to reach the operator, and blocks requests
+  without one.
+- **`POTD_GOOGLE_TRANSLATE_API_KEY`** — for the translation chain. Without it the
+  run still works, but the proverb goes on the image untranslated and a warning
+  says so. The key has no CLI flag, so it never lands in shell history. To get one:
+
+  1. In the [Google Cloud console](https://console.cloud.google.com/), create a
+     project and attach a billing account. A daily run translates roughly 400
+     characters, far inside the free monthly allowance — but check current pricing.
+     The default quota is unlimited, which means *uncapped*, not *free*: consider
+     setting a daily character cap so a bug or leaked key cannot run up a bill.
+  2. Enable the **Cloud Translation API** for the project.
+  3. Under *APIs & Services → Credentials*, create an API key and restrict it to
+     the Cloud Translation API.
 
 Then:
 
 ```powershell
 daily-proverb-overlay                      # today's POTD (UTC)
 daily-proverb-overlay --date 2026-09-28    # a specific day
-daily-proverb-overlay --dry-run -v         # fetch metadata, print attribution, write nothing
+daily-proverb-overlay --dry-run -v         # fetch and translate, print the result, write nothing
 daily-proverb-overlay --force              # rebuild a day that is already complete
+daily-proverb-overlay --languages ko,yo,hu # a different translation chain
+daily-proverb-overlay --languages ""       # no translation
+daily-proverb-overlay --quote-provider lorem  # placeholder text, no Wiktionary call
 ```
+
+`--dry-run` is the cheap way to try out a chain: it prints the translated proverb
+without rendering anything.
 
 Output lands in `output/YYYY-MM-DD/`:
 
@@ -57,7 +87,9 @@ src/daily_proverb_overlay/
 ├── storage.py        output paths, atomic writes, the idempotency check
 ├── sources/
 │   ├── wikimedia.py  Commons API → PictureOfTheDay
-│   └── quotes.py     QuoteProvider protocol + the Lorem Ipsum placeholder
+│   ├── wiktionary.py Category:English proverbs → one proverb per day
+│   ├── translation.py  the translation chain + Google Cloud Translation client
+│   └── quotes.py     QuoteProvider protocol, registry, Lorem Ipsum placeholder
 └── render/
     ├── fonts.py      finding a real TrueType file (breaks first in containers)
     ├── layout.py     font-metric text wrapping and size fitting
@@ -80,8 +112,11 @@ Three things, all in `storage.py` and `http_client.py`:
 The final image is written **last** for the same reason: a crash after the
 attribution but before the image leaves the day correctly marked incomplete.
 
-The placeholder quote provider is seeded by date, not random, so a rerun produces
-byte-identical text — which is what makes the idempotency claim testable.
+Proverb selection is deterministic by date, not random, so a rerun picks the same
+proverb. The translation is not guaranteed to match on a `--force` rebuild:
+Google updates its models, and the same input can come back differently months
+later. `metadata.json` records every hop of the chain, so the published version
+is never lost.
 
 ## Exit codes
 
@@ -105,3 +140,6 @@ Attribution is read from the `extmetadata` fields (`ObjectName`, `Artist`,
 `Credit`, `LicenseShortName`, `LicenseUrl`) and never hardcoded. Fields are
 genuinely often absent; missing ones degrade to `Unknown author` rather than
 guessing.
+
+Only the proverb itself — the Wiktionary page title — is used, never the
+definition text, which is CC BY-SA. `metadata.json` links the Wiktionary entry.

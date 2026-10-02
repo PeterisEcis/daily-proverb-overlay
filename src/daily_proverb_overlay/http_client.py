@@ -15,6 +15,7 @@ from __future__ import annotations
 import logging
 import os
 import tempfile
+from collections.abc import Mapping
 from pathlib import Path
 from types import TracebackType
 from typing import Any
@@ -74,13 +75,24 @@ class HttpClient:
         session.mount("http://", adapter)
         return session
 
-    def get_json(self, url: str, params: dict[str, Any] | None = None) -> dict[str, Any]:
-        """GET `url` and parse the response as a JSON object."""
+    def get_json(
+        self,
+        url: str,
+        params: dict[str, Any] | None = None,
+        headers: Mapping[str, str] | None = None,
+    ) -> dict[str, Any]:
+        """GET `url` and parse the response as a JSON object.
+
+        `headers` is for credentials. They are deliberately not logged, which is
+        why an API key belongs here rather than in `params`.
+        """
         log.debug("GET %s params=%s", url, params)
         try:
-            response = self._session.get(url, params=params, timeout=self.timeout)
+            response = self._session.get(url, params=params, headers=headers, timeout=self.timeout)
             response.raise_for_status()
             payload = response.json()
+        except requests.HTTPError as exc:
+            raise HttpError(f"request to {url} failed: {exc}{_error_detail(exc.response)}") from exc
         except requests.RequestException as exc:
             raise HttpError(f"request to {url} failed: {exc}") from exc
         except ValueError as exc:
@@ -141,3 +153,19 @@ class HttpClient:
         tb: TracebackType | None,
     ) -> None:
         self.close()
+
+
+def _error_detail(response: requests.Response | None) -> str:
+    """The API's own explanation of a failed request, if it gave one.
+
+    Google APIs put the actionable part -- "API key not valid", "the API has
+    not been enabled in this project" -- in a JSON body, which the bare status
+    line from `raise_for_status()` leaves out.
+    """
+    if response is None:
+        return ""
+    try:
+        message = response.json()["error"]["message"]
+    except (ValueError, KeyError, TypeError):
+        return ""
+    return f" ({message})" if isinstance(message, str) and message else ""

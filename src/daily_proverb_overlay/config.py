@@ -1,31 +1,68 @@
 """Settings for a single run.
 
-Values come from CLI flags first, then environment variables, then the defaults
-here. Nothing is read from a config file yet -- that arrives when there is a
-secret worth keeping out of the repo.
+Values come from, in order of precedence:
+
+1. CLI flags
+2. real environment variables -- how CI supplies them, as secrets
+3. a `.env` file in the working directory -- for local runs; see `.env.example`
+4. the defaults here
+
+The one secret, the translation API key, has no CLI flag: a flag would leave it
+in shell history and the process list.
 """
 
 from __future__ import annotations
 
 import os
 from collections.abc import Mapping
-from dataclasses import dataclass, replace
+from dataclasses import dataclass, field, replace
 from pathlib import Path
+
+from dotenv import dotenv_values
 
 from daily_proverb_overlay import __version__
 
 ENV_PREFIX = "POTD_"
+DOTENV_PATH = Path(".env")
 
 DEFAULT_OUTPUT_DIR = Path("output")
 DEFAULT_THUMBNAIL_WIDTH = 1600
 """Raw POTD files are routinely 50-100MB TIFFs. Always ask for a thumbnail."""
+
+DEFAULT_TRANSLATION_LANGUAGES: tuple[str, ...] = (
+    "ja",
+    "sw",
+    "ka",
+    "fi",
+    "zh-CN",
+    "eu",
+    "mg",
+    "th",
+)
+"""Eight language families, each losing something English needs to get back:
+
+* `ja` Japanese (Japonic): no articles or plurals, and subjects get dropped.
+* `sw` Swahili (Niger-Congo): a noun-class system English has nothing like.
+* `ka` Georgian (Kartvelian): one verb form carries subject, object and tense.
+* `fi` Finnish (Uralic): one pronoun for he and she, so gender gets reassigned.
+* `zh-CN` Chinese (Sino-Tibetan): no tense, plurals or articles at all.
+* `eu` Basque (an isolate, related to nothing): ergative grammar, and less
+  training data than most.
+* `mg` Malagasy (Austronesian): verb-object-subject order, the reverse of
+  English.
+* `th` Thai (Kra-Dai): no tense or plural marking, so the final hop back into
+  English has to guess both.
+
+The order keeps Chinese well away from Japanese, which shares its characters:
+a hop between the two would likely carry more meaning across than the rest.
+"""
 
 
 MISSING_CONTACT_MESSAGE = (
     "No contact information configured. Wikimedia's User-Agent policy requires a "
     "descriptive agent that includes a way to reach the operator, and blocks "
     "requests that lack one.\n"
-    "Set it for the session:\n"
+    "Set POTD_CONTACT in .env (copy .env.example to start one), or for the session:\n"
     '  $env:POTD_CONTACT = "https://github.com/you/pipelines"\n'
     "or pass it per run:\n"
     "  --contact https://github.com/you/pipelines"
@@ -55,7 +92,14 @@ class Settings:
     """Exponential backoff base, in seconds: 1, 2, 4, 8 ..."""
 
     font_path: Path | None = None
-    quote_provider: str = "lorem"
+    quote_provider: str = "wiktionary"
+
+    translation_languages: tuple[str, ...] = DEFAULT_TRANSLATION_LANGUAGES
+    """Languages the quote passes through on its way back to English. Empty
+    disables the chain."""
+
+    google_translate_api_key: str | None = field(default=None, repr=False)
+    """Kept out of `repr` so that logging the settings never leaks it."""
 
     @property
     def user_agent(self) -> str:
@@ -81,10 +125,13 @@ class Settings:
         `overrides` is the CLI's flags; None values mean "not supplied" and fall
         through to the environment, then to the defaults on this class.
 
+        `env` defaults to `read_environment()`: the process environment plus
+        `.env`. Pass a mapping to resolve against something else, e.g. in tests.
+
         Raises:
             ConfigError: if no contact information is available from either source.
         """
-        source = os.environ if env is None else env
+        source = read_environment() if env is None else env
         font = source.get(f"{ENV_PREFIX}FONT", "").strip()
 
         from_env = cls(
@@ -94,13 +141,46 @@ class Settings:
                 source, f"{ENV_PREFIX}THUMBNAIL_WIDTH", DEFAULT_THUMBNAIL_WIDTH
             ),
             font_path=Path(font) if font else None,
-            quote_provider=source.get(f"{ENV_PREFIX}QUOTE_PROVIDER", "lorem"),
+            quote_provider=source.get(f"{ENV_PREFIX}QUOTE_PROVIDER", "wiktionary"),
+            translation_languages=_languages(source, f"{ENV_PREFIX}TRANSLATION_LANGUAGES"),
+            google_translate_api_key=(
+                source.get(f"{ENV_PREFIX}GOOGLE_TRANSLATE_API_KEY", "").strip() or None
+            ),
         )
 
         settings = from_env.merged_with(**overrides)
         if not settings.contact.strip():
             raise ConfigError(MISSING_CONTACT_MESSAGE)
         return settings
+
+
+def read_environment(dotenv_path: Path = DOTENV_PATH) -> dict[str, str]:
+    """The process environment, with `dotenv_path` filling in whatever it lacks.
+
+    Real environment variables win, so a secret set in CI is never overridden by
+    a stray `.env` file. A missing file is fine: CI has none. The file is merged
+    into a copy rather than loaded into `os.environ`, so reading settings has no
+    side effects on the process.
+    """
+    values = dotenv_values(dotenv_path)
+    # A bare `KEY` line with no `=` parses as None; treat it as absent.
+    from_file = {key: value for key, value in values.items() if value is not None}
+    return {**from_file, **os.environ}
+
+
+def parse_languages(raw: str) -> tuple[str, ...]:
+    """`"ja, sw,fi"` -> `("ja", "sw", "fi")`. An empty string gives `()`.
+
+    Codes are not validated here: the translation API rejects unknown ones with
+    a clear message, and keeping a local list in sync with Google's would be a
+    chore for no gain.
+    """
+    return tuple(code.strip() for code in raw.split(",") if code.strip())
+
+
+def _languages(source: Mapping[str, str], key: str) -> tuple[str, ...]:
+    raw = source.get(key)
+    return DEFAULT_TRANSLATION_LANGUAGES if raw is None else parse_languages(raw)
 
 
 def _positive_int(source: Mapping[str, str], key: str, default: int) -> int:

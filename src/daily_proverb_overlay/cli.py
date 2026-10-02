@@ -17,18 +17,26 @@ Exit codes exist for the benefit of CI -- a workflow step needs to tell
 from __future__ import annotations
 
 import argparse
+import io
 import logging
 import sys
 from datetime import date, datetime, timezone
 from pathlib import Path
 
 from daily_proverb_overlay import __version__
-from daily_proverb_overlay.config import ConfigError, Settings
+from daily_proverb_overlay.config import (
+    DEFAULT_TRANSLATION_LANGUAGES,
+    ConfigError,
+    Settings,
+    parse_languages,
+)
 from daily_proverb_overlay.http_client import HttpError
 from daily_proverb_overlay.pipeline import PipelineResult, build_pipeline
 from daily_proverb_overlay.render.fonts import FontNotFoundError
 from daily_proverb_overlay.sources.quotes import available_providers
+from daily_proverb_overlay.sources.translation import TranslationError
 from daily_proverb_overlay.sources.wikimedia import PictureOfTheDayNotFound, WikimediaError
+from daily_proverb_overlay.sources.wiktionary import WiktionaryError
 
 log = logging.getLogger("daily_proverb_overlay")
 
@@ -83,7 +91,20 @@ def build_parser() -> argparse.ArgumentParser:
         "--quote-provider",
         default=None,
         choices=available_providers(),
-        help="Source of the overlay text (default: lorem, i.e. placeholder filler)",
+        help="Source of the overlay text (default: wiktionary; lorem is offline filler)",
+    )
+    parser.add_argument(
+        "--languages",
+        type=parse_languages,
+        default=None,
+        dest="translation_languages",
+        metavar="CODES",
+        help=(
+            "Comma-separated language codes to translate through before coming back "
+            f"to English (default: {','.join(DEFAULT_TRANSLATION_LANGUAGES)}). "
+            'Pass "" to skip translation. '
+            "Needs POTD_GOOGLE_TRANSLATE_API_KEY."
+        ),
     )
     parser.add_argument(
         "--force",
@@ -119,6 +140,7 @@ def main(argv: list[str] | None = None) -> int:
             thumbnail_width=args.thumbnail_width,
             font_path=args.font_path,
             quote_provider=args.quote_provider,
+            translation_languages=args.translation_languages,
         )
     except ConfigError as exc:
         log.error("%s", exc)
@@ -133,7 +155,7 @@ def main(argv: list[str] | None = None) -> int:
     except FontNotFoundError as exc:
         log.error("%s", exc)
         return EXIT_CONFIG
-    except (WikimediaError, HttpError) as exc:
+    except (WikimediaError, WiktionaryError, TranslationError, HttpError) as exc:
         log.error("%s", exc)
         return EXIT_FAILURE
     except KeyboardInterrupt:
@@ -153,12 +175,18 @@ def _report(result: PipelineResult, dry_run: bool) -> None:
 
     if dry_run:
         print(f"{result.potd_date}: dry run, no files written")
-        return
+    else:
+        print(f"{result.potd_date}: wrote {result.paths.final_image}")
+        print(f"  attribution: {result.paths.attribution}")
+        print(f"  metadata:    {result.paths.metadata}")
 
-    print(f"{result.potd_date}: wrote {result.paths.final_image}")
-    print(f"  attribution: {result.paths.attribution}")
-    print(f"  metadata:    {result.paths.metadata}")
-    if result.quote is not None and result.quote.is_placeholder:
+    quote = result.quote
+    if quote is None:
+        return
+    print(f"  quote:       {quote.text}")
+    if quote.original_text:
+        print(f"  originally:  {quote.original_text}")
+    if quote.is_placeholder:
         print("  note: overlay text is placeholder filler, not a real quote")
 
 
@@ -176,6 +204,12 @@ def _configure_logging(*, verbose: bool, quiet: bool) -> None:
         level = logging.WARNING
     else:
         level = logging.INFO
+
+    # Translations can come back with words left in the source script. A console
+    # or CI log stuck on a legacy code page must not crash the run over that.
+    for stream in (sys.stdout, sys.stderr):
+        if isinstance(stream, io.TextIOWrapper):
+            stream.reconfigure(errors="backslashreplace")
 
     logging.basicConfig(
         level=level,

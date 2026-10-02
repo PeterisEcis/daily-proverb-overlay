@@ -131,7 +131,7 @@ class OverlayCompositor:
             line_spacing=style.line_spacing,
         )
         author_block = self._single_line_block(
-            self._author_text(quote), content_width, style.author_size_ratio, height
+            self._byline_text(quote), content_width, style.author_size_ratio, height
         )
         credit_block = self._single_line_block(
             credit_line, content_width, style.credit_size_ratio, height
@@ -189,8 +189,18 @@ class OverlayCompositor:
         return text
 
     @staticmethod
-    def _author_text(quote: Quote) -> str:
-        return f"— {quote.author.strip()}" if quote.author else ""
+    def _byline_text(quote: Quote) -> str:
+        """The line under the quote: the untranslated original, then the author.
+
+        The original is what makes a garbled translation readable as a joke, so
+        it gets the byline even though proverbs have no author to fill it.
+        """
+        parts = []
+        if quote.original_text:
+            parts.append(f"Originally: “{quote.original_text.strip()}”")
+        if quote.author:
+            parts.append(f"— {quote.author.strip()}")
+        return " ".join(parts)
 
     def _single_line_block(
         self, text: str, content_width: int, size_ratio: float, image_height: int

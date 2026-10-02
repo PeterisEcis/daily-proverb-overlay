@@ -27,6 +27,7 @@ from daily_proverb_overlay.models import PictureOfTheDay, Quote
 from daily_proverb_overlay.render.compositor import OverlayCompositor, OverlayStyle, RenderedOverlay
 from daily_proverb_overlay.render.fonts import FontResolver
 from daily_proverb_overlay.sources.quotes import QuoteProvider, get_quote_provider
+from daily_proverb_overlay.sources.translation import GoogleCloudTranslator, TranslationChain
 from daily_proverb_overlay.sources.wikimedia import CommonsPotdClient
 from daily_proverb_overlay.storage import OutputPaths, OutputStore
 
@@ -57,11 +58,13 @@ class PotdOverlayPipeline:
         quote_provider: QuoteProvider,
         compositor: OverlayCompositor,
         store: OutputStore,
+        translation_chain: TranslationChain | None = None,
         jpeg_quality: int = 90,
     ) -> None:
         self.http = http
         self.potd_client = potd_client
         self.quote_provider = quote_provider
+        self.translation_chain = translation_chain
         self.compositor = compositor
         self.store = store
         self.jpeg_quality = jpeg_quality
@@ -92,6 +95,8 @@ class PotdOverlayPipeline:
         quote = self.quote_provider.fetch(potd_date)
         if quote.is_placeholder:
             log.warning("overlay text is placeholder filler, not a real quote")
+        if self.translation_chain is not None:
+            quote = self.translation_chain.apply(quote)
 
         # Re-resolve paths now that the MIME type is known, so the cached source
         # keeps a truthful extension.
@@ -163,11 +168,28 @@ def build_pipeline(settings: Settings, style: OverlayStyle | None = None) -> Pot
     return PotdOverlayPipeline(
         http=http,
         potd_client=CommonsPotdClient(http, thumbnail_width=settings.thumbnail_width),
-        quote_provider=get_quote_provider(settings.quote_provider),
+        quote_provider=get_quote_provider(settings.quote_provider, http),
         compositor=OverlayCompositor(FontResolver(settings.font_path), style),
         store=OutputStore(settings.output_dir),
+        translation_chain=_translation_chain(settings, http),
         jpeg_quality=style.jpeg_quality,
     )
+
+
+def _translation_chain(settings: Settings, http: HttpClient) -> TranslationChain | None:
+    """The configured chain, or None when it is turned off or has no key yet."""
+    if not settings.translation_languages:
+        return None
+    if not settings.google_translate_api_key:
+        log.warning(
+            "POTD_GOOGLE_TRANSLATE_API_KEY is not set, so the proverb will not be "
+            'translated. Set it, or pass --languages "" to turn translation off '
+            "and silence this warning."
+        )
+        return None
+
+    translator = GoogleCloudTranslator(http, settings.google_translate_api_key)
+    return TranslationChain(translator, settings.translation_languages)
 
 
 def _suffix_for(picture: PictureOfTheDay) -> str:
@@ -205,6 +227,10 @@ def _metadata(
             "source": quote.source,
             "provider": quote.provider,
             "is_placeholder": quote.is_placeholder,
+            "original_text": quote.original_text,
+            "translations": [
+                {"language": step.language, "text": step.text} for step in quote.translations
+            ],
         },
         "attribution": formatter.to_dict(),
         "render": {
