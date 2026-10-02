@@ -1,0 +1,24 @@
+# Local notes
+TODO.md
+
+# Generated output. A published subset gets committed back to the repo on a
+# schedule later; until that decision is made, keep local runs out of git.
+output/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Secrets
+.env
+
+# Fonts are bundled deliberately, but ignore stray downloads elsewhere.
+*.ttf.download
