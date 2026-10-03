@@ -1,0 +1,5 @@
+# The downloaded source image is only a cache, not part of the archive.
+*/source.*
+
+# Temp files left behind by an interrupted run.
+.*.part*
