@@ -1,11 +1,9 @@
 # Local notes
 TODO.md
 
-# Generated output. The scheduled workflow commits each day's folder -- the
-# archive lives in the repo -- minus the downloaded source image, which is only
-# a cache, and temp files left by an interrupted run.
-output/*/source.*
-output/**/.*.part*
+# Generated output. The archive lives on the `archive` branch, never on main:
+# the daily workflow checks that branch out into ./output and commits there.
+output/
 
 # The Pages site is rebuilt from output/ on every run and never committed.
 _site/

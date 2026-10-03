@@ -17,7 +17,7 @@ on:
         type: boolean
         default: false
 
-# Two runs at once would both try to push to main. Queue them instead.
+# Two runs at once would both try to push to the archive branch. Queue them instead.
 concurrency:
   group: daily-overlay
   cancel-in-progress: false
@@ -29,9 +29,19 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # push the day's output back to the repo
+      contents: write # push the day's output to the archive branch
     steps:
       - uses: actions/checkout@v7
+
+      # The archive lives on its own branch, `archive`, so main holds only code
+      # and the daily commit never touches it. It is checked out into ./output,
+      # which is where the job writes and the site builder reads. This has to
+      # come after the checkout above, which wipes the workspace first.
+      - name: Check out the archive
+        uses: actions/checkout@v7
+        with:
+          ref: archive
+          path: output
 
       - uses: actions/setup-python@v7
         with:
@@ -59,10 +69,11 @@ jobs:
           daily-proverb-overlay "${args[@]}"
 
       - name: Commit the output
+        working-directory: output
         env:
           INPUT_DATE: ${{ inputs.date }}
         run: |
-          git add output/
+          git add .
           if git diff --cached --quiet; then
             echo "Nothing new to commit: the day was already complete."
             exit 0
@@ -72,8 +83,8 @@ jobs:
           git commit -m "Daily overlay for ${INPUT_DATE:-$(date -u +%F)}"
           # A push may have landed while this ran. The commit only adds a new
           # date folder, so rebasing onto it cannot conflict.
-          git pull --rebase origin "$GITHUB_REF_NAME"
-          git push origin "HEAD:$GITHUB_REF_NAME"
+          git pull --rebase origin archive
+          git push origin HEAD:archive
 
       - name: Build the site
         run: daily-proverb-site
