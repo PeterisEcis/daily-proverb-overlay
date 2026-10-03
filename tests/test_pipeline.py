@@ -12,7 +12,7 @@ from typing import Any
 import pytest
 from PIL import Image
 
-from daily_proverb_overlay.config import Settings
+from daily_proverb_overlay.config import ConfigError, Settings
 from daily_proverb_overlay.models import Attribution, PictureOfTheDay, Quote
 from daily_proverb_overlay.pipeline import (
     PotdOverlayPipeline,
@@ -238,16 +238,13 @@ def test_source_suffix_comes_from_the_downloaded_url(image_url: str, suffix: str
     assert _suffix_for(replace(PICTURE, image_url=image_url)) == suffix
 
 
-def test_missing_api_key_skips_translation_with_a_warning(
-    caplog: pytest.LogCaptureFixture,
-) -> None:
+def test_chain_without_an_api_key_is_refused() -> None:
+    # Settings.resolve() stops this first. Settings built by hand still cannot
+    # slip an untranslated day through.
     settings = Settings(contact="me@example.org", translation_languages=("ja",))
 
-    with caplog.at_level(logging.WARNING):
-        chain = _translation_chain(settings, FakeHttp())
-
-    assert chain is None
-    assert "POTD_GOOGLE_TRANSLATE_API_KEY" in caplog.text
+    with pytest.raises(ConfigError, match="POTD_GOOGLE_TRANSLATE_API_KEY"):
+        _translation_chain(settings, FakeHttp())
 
 
 def test_empty_language_list_turns_translation_off_quietly(
