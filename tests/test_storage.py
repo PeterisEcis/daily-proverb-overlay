@@ -7,6 +7,7 @@ from pathlib import Path
 
 import pytest
 from PIL import Image
+import os
 
 from daily_proverb_overlay.storage import OutputPaths, OutputStore
 from fakes import UnsaveableImage
