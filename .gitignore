@@ -1,7 +1,7 @@
 # Local notes
 TODO.md
 
-# Generated output. The archive lives on the `output` branch, never on main:
+# Generated output. The archive lives on the `archive` branch, never on main:
 # the daily workflow checks that branch out into ./output and commits there.
 output/
 

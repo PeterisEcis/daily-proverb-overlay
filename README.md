@@ -77,7 +77,7 @@ Output lands in `output/YYYY-MM-DD/`:
 ## Deployment
 
 [`.github/workflows/daily.yml`](.github/workflows/daily.yml) runs the job every day
-at 00:17 UTC on GitHub's machines, commits the new day's folder to the `output`
+at 00:17 UTC on GitHub's machines, commits the new day's folder to the `archive`
 branch, rebuilds the site and publishes it to GitHub Pages:
 <https://peterisecis.github.io/daily-proverb-overlay/>
 
@@ -100,14 +100,14 @@ daily-proverb-site              # output/ → _site/, rebuilt from scratch
 
 Open `_site/index.html` in a browser to preview it locally.
 
-The archive lives on its own branch, `output`: one folder per day, without
+The archive lives on its own branch, `archive`: one folder per day, without
 `source.*`, the downloaded original, which is only a cache. Each day adds about
 1 MB. `main` holds only code and ignores `output/`, so locally that folder is just
 where your own runs land. To build the site from the real archive, check the
 branch out beside the repo:
 
 ```powershell
-git worktree add ..\daily-proverb-archive output
+git worktree add ..\daily-proverb-archive archive
 daily-proverb-site --output-dir ..\daily-proverb-archive
 ```
 
