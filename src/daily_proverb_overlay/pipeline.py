@@ -14,10 +14,10 @@ leaves the day correctly marked unfinished.
 from __future__ import annotations
 
 import logging
-import mimetypes
 from dataclasses import dataclass
 from datetime import date
-from pathlib import Path
+from pathlib import Path, PurePosixPath
+from urllib.parse import urlsplit
 
 from daily_proverb_overlay import __version__
 from daily_proverb_overlay.attribution import AttributionFormatter
@@ -98,7 +98,7 @@ class PotdOverlayPipeline:
         if self.translation_chain is not None:
             quote = self.translation_chain.apply(quote)
 
-        # Re-resolve paths now that the MIME type is known, so the cached source
+        # Re-resolve paths now that the image URL is known, so the cached source
         # keeps a truthful extension.
         paths = self.store.paths_for(potd_date, _suffix_for(picture))
         formatter = AttributionFormatter(picture.attribution)
@@ -193,12 +193,15 @@ def _translation_chain(settings: Settings, http: HttpClient) -> TranslationChain
 
 
 def _suffix_for(picture: PictureOfTheDay) -> str:
-    """File extension for the cached source, derived from the served MIME type."""
-    if picture.mime:
-        guessed = mimetypes.guess_extension(picture.mime)
-        if guessed:
-            return ".jpeg" if guessed == ".jpe" else guessed
-    return ".jpg"
+    """File extension for the cached source, taken from the URL actually downloaded.
+
+    Not from `picture.mime`: that is the original's type, and Commons converts
+    whatever it cannot serve as is, so a TIFF original arrives as a JPEG. The
+    API's `thumbmime` is no better -- it reports PNG for those same JPEGs. The
+    thumbnail URL's own extension is the one that matches the bytes.
+    """
+    suffix = PurePosixPath(urlsplit(picture.image_url).path).suffix.lower()
+    return suffix or ".jpg"
 
 
 def _metadata(

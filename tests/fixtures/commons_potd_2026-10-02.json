@@ -1,0 +1,117 @@
+{
+  "continue": {
+    "iistart": "2025-01-23T15:18:58Z",
+    "continue": "||"
+  },
+  "query": {
+    "pages": [
+      {
+        "pageid": 158411482,
+        "ns": 6,
+        "title": "File:Gene Autry, NPG 94 39.jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "size": 10347523,
+            "width": 3648,
+            "height": 4494,
+            "thumburl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Gene_Autry%2C_NPG_94_39.jpg/1920px-Gene_Autry%2C_NPG_94_39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+            "thumbwidth": 1600,
+            "thumbheight": 1971,
+            "responsiveUrls": {
+              "2": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Gene_Autry%2C_NPG_94_39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+            },
+            "thumbattribs": {
+              "src": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Gene_Autry%2C_NPG_94_39.jpg/1920px-Gene_Autry%2C_NPG_94_39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+              "decoding": "async",
+              "loading": "lazy",
+              "width": 1600,
+              "height": 1971,
+              "srcset": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Gene_Autry%2C_NPG_94_39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled 2x"
+            },
+            "url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Gene_Autry%2C_NPG_94_39.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+            "descriptionurl": "https://commons.wikimedia.org/wiki/File:Gene_Autry,_NPG_94_39.jpg",
+            "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=158411482",
+            "extmetadata": {
+              "DateTime": {
+                "value": "2025-01-28 12:17:01",
+                "source": "mediawiki-metadata",
+                "hidden": ""
+              },
+              "ObjectName": {
+                "value": "Gene Autry, NPG 94 39",
+                "source": "mediawiki-metadata"
+              },
+              "CommonsMetadataExtension": {
+                "value": 1.2,
+                "source": "extension",
+                "hidden": ""
+              },
+              "Categories": {
+                "value": "Gene Autry|CC-Zero|Retouched pictures|PD US not renewed|Files from external sources with reviewed licenses|Robert F. Cranston|Featured pictures by others nominated by Yann Forget|Featured pictures on Wikipedia, English|Files uploaded by Yann Forget|Featured pictures restored by Yann Forget|Featured pictures taken on film|Photographs in the National Portrait Gallery (United States)|Cattle brands (USA)|Photographs by Harry Warnecke|Copyrighted in Germany",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "Assessments": {
+                "value": "featured|potd",
+                "source": "commons-categories",
+                "hidden": ""
+              },
+              "ImageDescription": {
+                "value": "Gene Orvon Autry, 29 Sep 1907 - 2 Oct 1998. Color carbro print, 41 x 34 cm (16 1/8 x 13 3/8\").",
+                "source": "commons-desc-page"
+              },
+              "DateTimeOriginal": {
+                "value": "1942",
+                "source": "commons-desc-page"
+              },
+              "Credit": {
+                "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.si.edu/object/gene-autry:npg_NPG.94.39\">National Portrait Gallery, Smithsonian Institution</a>",
+                "source": "commons-desc-page"
+              },
+              "Artist": {
+                "value": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Harry_Warnecke\" class=\"extiw\" title=\"w:en:Harry Warnecke\"><span title=\"American photographer (1900ā€“1984)\">Harry Warnecke</span></a></bdi> / <bdi><a href=\"https://www.wikidata.org/wiki/Q112892590\" class=\"extiw\" title=\"d:Q112892590\"><span title=\"American photographer (1897-1978)\">Robert F. Cranston</span></a></bdi>",
+                "source": "commons-desc-page"
+              },
+              "Permission": {
+                "value": "Copyright not renewed, see <a href=\"//commons.wikimedia.org/wiki/File:Gene_Autry_1942.JPG\" title=\"File:Gene Autry 1942.JPG\">File:Gene Autry 1942.JPG</a>",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "LicenseShortName": {
+                "value": "Public domain",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "UsageTerms": {
+                "value": "Public domain",
+                "source": "commons-desc-page"
+              },
+              "AttributionRequired": {
+                "value": "false",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Copyrighted": {
+                "value": "False",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "Restrictions": {
+                "value": "",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "License": {
+                "value": "pd",
+                "source": "commons-templates",
+                "hidden": ""
+              }
+            },
+            "mime": "image/jpeg"
+          }
+        ]
+      }
+    ]
+  }
+}

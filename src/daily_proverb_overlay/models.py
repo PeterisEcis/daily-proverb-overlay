@@ -44,6 +44,9 @@ class PictureOfTheDay:
     width: int
     height: int
     mime: str | None
+    """The original file's type. Not necessarily what `image_url` serves: a
+    TIFF original's thumbnail is a JPEG."""
+
     attribution: Attribution
 
 
