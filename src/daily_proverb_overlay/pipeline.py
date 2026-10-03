@@ -21,7 +21,7 @@ from urllib.parse import urlsplit
 
 from daily_proverb_overlay import __version__
 from daily_proverb_overlay.attribution import AttributionFormatter
-from daily_proverb_overlay.config import Settings
+from daily_proverb_overlay.config import MISSING_API_KEY_MESSAGE, ConfigError, Settings
 from daily_proverb_overlay.http_client import HttpClient
 from daily_proverb_overlay.models import PictureOfTheDay, Quote
 from daily_proverb_overlay.render.compositor import OverlayCompositor, OverlayStyle, RenderedOverlay
@@ -177,16 +177,13 @@ def build_pipeline(settings: Settings, style: OverlayStyle | None = None) -> Pot
 
 
 def _translation_chain(settings: Settings, http: HttpClient) -> TranslationChain | None:
-    """The configured chain, or None when it is turned off or has no key yet."""
+    """The configured chain, or None when translation is turned off."""
     if not settings.translation_languages:
         return None
     if not settings.google_translate_api_key:
-        log.warning(
-            "POTD_GOOGLE_TRANSLATE_API_KEY is not set, so the proverb will not be "
-            'translated. Set it, or pass --languages "" to turn translation off '
-            "and silence this warning."
-        )
-        return None
+        # `Settings.resolve()` already refuses this, so only settings built by
+        # hand get here. Publishing untranslated is never the fallback.
+        raise ConfigError(MISSING_API_KEY_MESSAGE)
 
     translator = GoogleCloudTranslator(http, settings.google_translate_api_key)
     return TranslationChain(translator, settings.translation_languages)

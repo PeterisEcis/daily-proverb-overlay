@@ -38,8 +38,10 @@ Two values need filling in:
   a descriptive agent with a way to reach the operator, and blocks requests
   without one.
 - **`POTD_GOOGLE_TRANSLATE_API_KEY`** — for the translation chain. Without it the
-  run still works, but the proverb goes on the image untranslated and a warning
-  says so. The key has no CLI flag, so it never lands in shell history. To get one:
+  run stops with exit code 4 rather than publish the proverb untranslated, since a
+  finished day is never redone. To run without translation on purpose, pass
+  `--languages ""`. The key has no CLI flag, so it never lands in shell history.
+  To get one:
 
   1. In the [Google Cloud console](https://console.cloud.google.com/), create a
      project and attach a billing account. A daily run translates roughly 400
@@ -166,7 +168,7 @@ CI needs to tell "nothing published yet" apart from "the job is broken":
 | 1 | Unexpected failure |
 | 2 | Bad invocation |
 | 3 | No POTD published for that date |
-| 4 | Configuration problem (missing contact, no font found) |
+| 4 | Configuration problem (missing contact, no translation key, no font found) |
 
 ## Licensing
 

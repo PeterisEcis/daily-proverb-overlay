@@ -68,6 +68,16 @@ MISSING_CONTACT_MESSAGE = (
     "  --contact https://github.com/you/pipelines"
 )
 
+MISSING_API_KEY_MESSAGE = (
+    "Translation is on, but no API key is configured. Without one the proverb would be "
+    "published untranslated, and a finished day is never redone, so the run stops "
+    "instead.\n"
+    "Set POTD_GOOGLE_TRANSLATE_API_KEY in .env (in CI, as a repository secret), or turn "
+    "translation off on purpose for the run:\n"
+    '  --languages ""\n'
+    "or for good, with an empty POTD_TRANSLATION_LANGUAGES= in .env."
+)
+
 
 class ConfigError(ValueError):
     """Raised when settings are missing or unusable."""
@@ -99,7 +109,11 @@ class Settings:
     disables the chain."""
 
     google_translate_api_key: str | None = field(default=None, repr=False)
-    """Kept out of `repr` so that logging the settings never leaks it."""
+    """Kept out of `repr` so that logging the settings never leaks it.
+
+    Required whenever `translation_languages` is non-empty; `resolve()` enforces
+    that.
+    """
 
     @property
     def user_agent(self) -> str:
@@ -129,7 +143,8 @@ class Settings:
         `.env`. Pass a mapping to resolve against something else, e.g. in tests.
 
         Raises:
-            ConfigError: if no contact information is available from either source.
+            ConfigError: if no contact information is available from either source,
+                or translation is on without an API key.
         """
         source = read_environment() if env is None else env
         font = source.get(f"{ENV_PREFIX}FONT", "").strip()
@@ -148,9 +163,13 @@ class Settings:
             ),
         )
 
+        # Both checks run on the merged result, so a flag can still settle them:
+        # `--contact`, or `--languages ""` for a run without a key.
         settings = from_env.merged_with(**overrides)
         if not settings.contact.strip():
             raise ConfigError(MISSING_CONTACT_MESSAGE)
+        if settings.translation_languages and not settings.google_translate_api_key:
+            raise ConfigError(MISSING_API_KEY_MESSAGE)
         return settings
 
 

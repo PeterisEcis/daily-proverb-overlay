@@ -16,7 +16,9 @@ from daily_proverb_overlay.config import (
 )
 
 CONTACT = "https://github.com/example/daily-proverb-overlay"
-ENV = {"POTD_CONTACT": CONTACT}
+# Translation is on by default, so a complete setup needs the key as well.
+KEY = {"POTD_GOOGLE_TRANSLATE_API_KEY": "test-key"}
+ENV = {"POTD_CONTACT": CONTACT, **KEY}
 
 
 @pytest.mark.parametrize("contact", [None, "", "   "])
@@ -28,7 +30,7 @@ def test_contact_is_required(contact: str | None) -> None:
 
 
 def test_contact_can_come_from_the_command_line_alone() -> None:
-    assert Settings.resolve(env={}, contact=CONTACT).contact == CONTACT
+    assert Settings.resolve(env=KEY, contact=CONTACT).contact == CONTACT
 
 
 def test_environment_values_are_read() -> None:
@@ -97,9 +99,34 @@ def test_api_key_is_trimmed_and_kept_out_of_repr() -> None:
     assert "secret-key" not in repr(settings)
 
 
-def test_blank_api_key_counts_as_missing() -> None:
-    settings = Settings.resolve(env={**ENV, "POTD_GOOGLE_TRANSLATE_API_KEY": "  "})
+@pytest.mark.parametrize("key", [None, "", "   "], ids=["unset", "empty", "blank"])
+def test_translation_without_an_api_key_is_refused(key: str | None) -> None:
+    # An unset CI secret arrives as an empty string, not as a missing variable.
+    env = {"POTD_CONTACT": CONTACT}
+    if key is not None:
+        env["POTD_GOOGLE_TRANSLATE_API_KEY"] = key
 
+    with pytest.raises(ConfigError, match="POTD_GOOGLE_TRANSLATE_API_KEY"):
+        Settings.resolve(env=env)
+
+
+@pytest.mark.parametrize(
+    ("env_languages", "flag"),
+    [
+        pytest.param("", None, id="turned off in the environment"),
+        pytest.param(None, (), id='turned off with --languages ""'),
+    ],
+)
+def test_no_key_is_needed_once_translation_is_off(
+    env_languages: str | None, flag: tuple[str, ...] | None
+) -> None:
+    env = {"POTD_CONTACT": CONTACT}
+    if env_languages is not None:
+        env["POTD_TRANSLATION_LANGUAGES"] = env_languages
+
+    settings = Settings.resolve(env=env, translation_languages=flag)
+
+    assert settings.translation_languages == ()
     assert settings.google_translate_api_key is None
 
 

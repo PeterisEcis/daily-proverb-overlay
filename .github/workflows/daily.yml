@@ -57,6 +57,8 @@ jobs:
       - name: Render the day
         env:
           POTD_CONTACT: ${{ vars.POTD_CONTACT }}
+          # A missing secret arrives as an empty string. The run then fails with
+          # exit code 4 instead of publishing an untranslated day for good.
           POTD_GOOGLE_TRANSLATE_API_KEY: ${{ secrets.POTD_GOOGLE_TRANSLATE_API_KEY }}
           # Inputs reach the script through env, never pasted into `run:`
           # directly: text substituted into a script is executed as shell code.

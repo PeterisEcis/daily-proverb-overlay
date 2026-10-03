@@ -11,7 +11,7 @@ Exit codes exist for the benefit of CI -- a workflow step needs to tell
     1  unexpected failure
     2  bad invocation (argparse)
     3  no POTD published for the requested date
-    4  configuration problem, e.g. missing contact info or no font
+    4  configuration problem, e.g. missing contact info, no translation key, or no font
 """
 
 from __future__ import annotations
