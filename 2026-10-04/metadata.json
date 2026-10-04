@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-04",
+  "source": {
+    "file_title": "File:Basilica dei Santi Apostoli (Rome) - Ceiling.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Basilica_dei_Santi_Apostoli_%28Rome%29_-_Ceiling.jpg/1920px-Basilica_dei_Santi_Apostoli_%28Rome%29_-_Ceiling.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 2353,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "When the cat is away from home, the mice will play with the cat.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/when_the_cat%27s_away_the_mice_play",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "When the cat's away the mice play",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "猫がいない間にネズミが遊ぶ"
+      },
+      {
+        "language": "sw",
+        "text": "Panya hucheza paka akiwa mbali"
+      },
+      {
+        "language": "ka",
+        "text": "თაგვი კატასთან თამაშობს, როცა ის შორსაა."
+      },
+      {
+        "language": "fi",
+        "text": "Hiiri leikkii kissan kanssa, kun tämä on poissa."
+      },
+      {
+        "language": "zh-CN",
+        "text": "猫不在家的时候，老鼠会和猫玩耍。"
+      },
+      {
+        "language": "eu",
+        "text": "Katua etxean ez dagoenean, saguak katuarekin jolasten dira."
+      },
+      {
+        "language": "mg",
+        "text": "Rehefa tsy ao an-trano ny saka dia milalao amin'ilay saka ny totozy."
+      },
+      {
+        "language": "th",
+        "text": "เมื่อแมวไม่อยู่บ้าน หนูจะเล่นกับแมว"
+      },
+      {
+        "language": "en",
+        "text": "When the cat is away from home, the mice will play with the cat."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Basilica dei Santi Apostoli (Rome) - Ceiling",
+    "artist": "Livioandronico2013",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Basilica_dei_Santi_Apostoli_(Rome)_-_Ceiling.jpg",
+    "share_alike": true,
+    "credit_line": "Basilica dei Santi Apostoli (Rome) - Ceiling · Livioandronico2013 · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 146,
+    "quote_lines": 3,
+    "width": 1920,
+    "height": 2824
+  }
+}
