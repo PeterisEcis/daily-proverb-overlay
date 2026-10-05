@@ -2,10 +2,12 @@ name: Daily overlay
 
 on:
   schedule:
-    # 00:17 UTC every day. Commons schedules the POTD by UTC day, and an
+    # 02:37 UTC every day. Commons schedules the POTD by UTC day, so any time
+    # in that day renders the right picture. Midnight UTC is the busiest time
+    # for scheduled runs (at 00:17 ours started ~5 hours late), and an
     # off-the-hour minute avoids the top-of-the-hour rush, when GitHub delays
     # (and occasionally drops) scheduled runs.
-    - cron: "17 0 * * *"
+    - cron: "37 2 * * *"
   workflow_dispatch:
     inputs:
       date:
