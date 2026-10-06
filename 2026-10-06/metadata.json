@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-06",
+  "source": {
+    "file_title": "File:Bessen van een Mahonia aquifolium. 17-08-2025. (actm.) 01.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Bessen_van_een_Mahonia_aquifolium._17-08-2025._%28actm.%29_01.jpg/1920px-Bessen_van_een_Mahonia_aquifolium._17-08-2025._%28actm.%29_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1600,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Ancient proverbs should be printed in pairs.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/proverbs_should_go_in_pairs",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Proverbs should go in pairs",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "ことわざはペアで掲載するべきである"
+      },
+      {
+        "language": "sw",
+        "text": "Methali zinapaswa kuchapishwa katika jozi."
+      },
+      {
+        "language": "ka",
+        "text": "იგავები წყვილებად უნდა დაიბეჭდოს."
+      },
+      {
+        "language": "fi",
+        "text": "Sananlaskut tulisi tulostaa pareittain."
+      },
+      {
+        "language": "zh-CN",
+        "text": "谚语应该成对印刷。"
+      },
+      {
+        "language": "eu",
+        "text": "Esaera zaharrak binaka inprimatu behar dira."
+      },
+      {
+        "language": "mg",
+        "text": "Tokony hatao pirinty tsiroaroa ireo ohabolana taloha."
+      },
+      {
+        "language": "th",
+        "text": "สุภาษิตโบราณควรพิมพ์เป็นคู่ๆ"
+      },
+      {
+        "language": "en",
+        "text": "Ancient proverbs should be printed in pairs."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Bessen van een Mahonia aquifolium. 17-08-2025. (actm.) 01",
+    "artist": "Agnes Monkelbaan",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Bessen_van_een_Mahonia_aquifolium._17-08-2025._(actm.)_01.jpg",
+    "share_alike": true,
+    "credit_line": "Bessen van een Mahonia aquifolium. 17-08-2025. (actm.) 01 · Agnes Monkelbaan · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 99,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1920
+  }
+}
