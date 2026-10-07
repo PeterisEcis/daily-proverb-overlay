@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-07",
+  "source": {
+    "file_title": "File:Rain Quail in Bhigwan August 2025 by Tisha Mukherjee 13.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Rain_Quail_in_Bhigwan_August_2025_by_Tisha_Mukherjee_13.jpg/1920px-Rain_Quail_in_Bhigwan_August_2025_by_Tisha_Mukherjee_13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1066,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "The loudest sounds often come from empty containers.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/empty_vessels_make_the_most_sound",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Empty vessels make the most sound",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "空の容器は最も大きな音を立てる"
+      },
+      {
+        "language": "sw",
+        "text": "Chombo tupu hutoa kelele kubwa zaidi."
+      },
+      {
+        "language": "ka",
+        "text": "ცარიელი კონტეინერი ყველაზე ხმამაღალ ხმაურს გამოსცემს."
+      },
+      {
+        "language": "fi",
+        "text": "Tyhjä säiliö pitää kovimman äänen."
+      },
+      {
+        "language": "zh-CN",
+        "text": "空容器发出的声音最大。"
+      },
+      {
+        "language": "eu",
+        "text": "Soinua ontzi huts batetik ateratzen da ozenen."
+      },
+      {
+        "language": "mg",
+        "text": "Avy amin'ny fitoeran-javatra foana no ivoahan'ny feo mafy indrindra."
+      },
+      {
+        "language": "th",
+        "text": "เสียงที่ดังที่สุดมักมาจากภาชนะที่ว่างเปล่าเสมอ"
+      },
+      {
+        "language": "en",
+        "text": "The loudest sounds often come from empty containers."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Rain Quail in Bhigwan August 2025 by Tisha Mukherjee 13",
+    "artist": "Tisha Mukherjee",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Rain_Quail_in_Bhigwan_August_2025_by_Tisha_Mukherjee_13.jpg",
+    "share_alike": true,
+    "credit_line": "Rain Quail in Bhigwan August 2025 by Tisha Mukherjee 13 · Tisha Mukherjee · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1280
+  }
+}
