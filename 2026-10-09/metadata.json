@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-09",
+  "source": {
+    "file_title": "File:PO boxes at the historic Chico Post Office (2024)-L1005460.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/PO_boxes_at_the_historic_Chico_Post_Office_%282024%29-L1005460.jpg/1920px-PO_boxes_at_the_historic_Chico_Post_Office_%282024%29-L1005460.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1143,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "A bad tree will not bear good apples.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/a_bad_tree_does_not_yield_good_apples",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "A bad tree does not yield good apples",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "悪い木からは良いリンゴは実らない"
+      },
+      {
+        "language": "sw",
+        "text": "Miti mibaya haizai tufaha nzuri."
+      },
+      {
+        "language": "ka",
+        "text": "ცუდი ხეები კარგ ვაშლებს არ იძლევა."
+      },
+      {
+        "language": "fi",
+        "text": "Huonot puut eivät tuota hyviä omenoita."
+      },
+      {
+        "language": "zh-CN",
+        "text": "坏树结不出好苹果。"
+      },
+      {
+        "language": "eu",
+        "text": "Zuhaitz txarrek ez dituzte sagar onik ematen."
+      },
+      {
+        "language": "mg",
+        "text": "Ny hazo ratsy tsy mamoa paoma tsara."
+      },
+      {
+        "language": "th",
+        "text": "ต้นไม้ที่ไม่ดีย่อมไม่ให้ผลแอปเปิ้ลที่ดี"
+      },
+      {
+        "language": "en",
+        "text": "A bad tree will not bear good apples."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "PO boxes at the historic Chico Post Office (2024)-L1005460",
+    "artist": "Frank Schulenburg",
+    "credit": "Self-photographed This photo was taken with Leica M11",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:PO_boxes_at_the_historic_Chico_Post_Office_(2024)-L1005460.jpg",
+    "share_alike": true,
+    "credit_line": "PO boxes at the historic Chico Post Office (2024)-L1005460 · Frank Schulenburg · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 71,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1371
+  }
+}
