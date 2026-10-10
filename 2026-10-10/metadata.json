@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-10",
+  "source": {
+    "file_title": "File:Bust of Germanicus, front - Getty Museum (2021.66).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Bust_of_Germanicus%2C_front_-_Getty_Museum_%282021.66%29.jpg/1920px-Bust_of_Germanicus%2C_front_-_Getty_Museum_%282021.66%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1993,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "I trust everyone, but I'm always cautious.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/trust_everybody%2C_but_always_cut_the_cards",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Trust everybody, but always cut the cards",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "全員を信頼するが、常にカードを切る"
+      },
+      {
+        "language": "sw",
+        "text": "Ninawaamini kila mtu, lakini mimi hucheza karata zangu kila wakati."
+      },
+      {
+        "language": "ka",
+        "text": "ყველას ვენდობი, მაგრამ ყოველთვის სწორად ვთამაშობ ჩემს კარტს."
+      },
+      {
+        "language": "fi",
+        "text": "Luotan kaikkiin, mutta pelaan aina korttini oikein."
+      },
+      {
+        "language": "zh-CN",
+        "text": "我信任所有人，但我总是谨慎行事。"
+      },
+      {
+        "language": "eu",
+        "text": "Denetan konfiantza dut, baina beti kontuz jokatzen dut."
+      },
+      {
+        "language": "mg",
+        "text": "Matoky ny olona rehetra aho, saingy mitandrina tsara foana."
+      },
+      {
+        "language": "th",
+        "text": "ฉันไว้ใจทุกคน แต่ฉันก็ระมัดระวังตัวอยู่เสมอ"
+      },
+      {
+        "language": "en",
+        "text": "I trust everyone, but I'm always cautious."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Bust of Germanicus, front - Getty Museum (2021.66)",
+    "artist": "J. Paul Getty Museum",
+    "credit": "The Getty Center, Object 10A1E7 This image was taken from the Getty Research Institute's Open Content Program, which states the following regarding their assessment that no known copyright restrictions exist: Open content images are digital surrogates of works of art that are in the Getty's collections and in the public domain, for which we hold all rights, or for which we are not aware of any rights restrictions. While the Getty Research Institute cannot make an absolute statement on the copyright status of a given image, \"Open content images can be used for any purpose without first seeking permission from the Getty.\" More information can be found at http://www.getty.edu/about/opencontent.html.No known copyright restrictionsNo restrictionshttp://www.getty.edu/about/opencontent.htmlfalse",
+    "license_short_name": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Bust_of_Germanicus,_front_-_Getty_Museum_(2021.66).jpg",
+    "share_alike": false,
+    "credit_line": "Bust of Germanicus, front - Getty Museum (2021.66) · J. Paul Getty Museum · CC0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 124,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 2391
+  }
+}
