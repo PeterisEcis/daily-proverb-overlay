@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-11",
+  "source": {
+    "file_title": "File:Zona arqueológica de Cantona, Puebla, México, 2013-10-11, DD 43.JPG",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Zona_arqueol%C3%B3gica_de_Cantona%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-11%2C_DD_43.JPG/1920px-Zona_arqueol%C3%B3gica_de_Cantona%2C_Puebla%2C_M%C3%A9xico%2C_2013-10-11%2C_DD_43.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 822,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "The person who was drowning picked up a straw.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/a_drowning_man_will_grasp_at_straws",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "A drowning man will grasp at straws",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "溺れる者は藁にもすがる"
+      },
+      {
+        "language": "sw",
+        "text": "Mtu anayezama atashika majani."
+      },
+      {
+        "language": "ka",
+        "text": "დამხრჩვალი ჩალას ჩაეჭიდება."
+      },
+      {
+        "language": "fi",
+        "text": "Hukkuva mies tarttuu oljenkorteen."
+      },
+      {
+        "language": "zh-CN",
+        "text": "溺水者抓住一根稻草。"
+      },
+      {
+        "language": "eu",
+        "text": "Itotzen ari zen pertsonak lasto bati heldu zion."
+      },
+      {
+        "language": "mg",
+        "text": "Naka mololo ilay olona maty an-drano."
+      },
+      {
+        "language": "th",
+        "text": "คนที่จมน้ำหยิบหลอดดูดขึ้นมา"
+      },
+      {
+        "language": "en",
+        "text": "The person who was drowning picked up a straw."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Zona arqueológica de Cantona, Puebla, México, 2013-10-11, DD 43",
+    "artist": "Diego Delso",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Zona_arqueol%C3%B3gica_de_Cantona,_Puebla,_M%C3%A9xico,_2013-10-11,_DD_43.JPG",
+    "share_alike": true,
+    "credit_line": "Zona arqueológica de Cantona, Puebla, México, 2013-10-11, DD 43 · Diego Delso · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 51,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 986
+  }
+}
