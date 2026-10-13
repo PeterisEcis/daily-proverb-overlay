@@ -172,6 +172,10 @@ CI needs to tell "nothing published yet" apart from "the job is broken":
 
 ## Licensing
 
+The code is under the [MIT License](LICENSE). That covers the code only: the
+generated images on the `archive` branch keep their source picture's license,
+stated in each day's `attribution.txt`.
+
 Commons only accepts free licenses, so overlaying is always permitted. Most POTDs
 are **CC BY-SA**, which makes the overlay a derivative that inherits ShareAlike —
 `attribution.txt` states this whenever the source license indicates SA.
