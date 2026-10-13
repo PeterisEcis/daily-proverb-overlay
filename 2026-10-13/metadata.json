@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-13",
+  "source": {
+    "file_title": "File:Desert elephant (Loxodonta africana) spraying sand.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Desert_elephant_%28Loxodonta_africana%29_spraying_sand.jpg/1920px-Desert_elephant_%28Loxodonta_africana%29_spraying_sand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Those rules must be broken.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/rules_are_there_to_be_broken",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Rules are there to be broken",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "ルールは破るためにある"
+      },
+      {
+        "language": "sw",
+        "text": "Sheria zinapaswa kuvunjwa."
+      },
+      {
+        "language": "ka",
+        "text": "წესები უნდა დაირღვეს."
+      },
+      {
+        "language": "fi",
+        "text": "Sääntöjä on rikottava."
+      },
+      {
+        "language": "zh-CN",
+        "text": "规则必须被打破。"
+      },
+      {
+        "language": "eu",
+        "text": "Arauak hautsi behar dira."
+      },
+      {
+        "language": "mg",
+        "text": "Tsy maintsy raràna ny fitsipika."
+      },
+      {
+        "language": "th",
+        "text": "กฎเกณฑ์เหล่านั้นต้องถูกแหก"
+      },
+      {
+        "language": "en",
+        "text": "Those rules must be broken."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Desert elephant (Loxodonta africana) spraying sand",
+    "artist": "Charles J. Sharp",
+    "credit": "Own work, from Sharp Photography, sharpphotography.co.uk",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Desert_elephant_(Loxodonta_africana)_spraying_sand.jpg",
+    "share_alike": true,
+    "credit_line": "Desert elephant (Loxodonta africana) spraying sand · Charles J. Sharp · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
