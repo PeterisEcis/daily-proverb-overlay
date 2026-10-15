@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-15",
+  "source": {
+    "file_title": "File:Pepino de mar (Holothuria fuscogilva), parque nacional Ras Muhammad, Egipto, 2022-03-28, DD 119.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Pepino_de_mar_%28Holothuria_fuscogilva%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-28%2C_DD_119.jpg/1920px-Pepino_de_mar_%28Holothuria_fuscogilva%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-28%2C_DD_119.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Nothing comes for free in this world.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/you_don%27t_get_something_for_nothing",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "You don't get something for nothing",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "タダで何かを得ることはできない"
+      },
+      {
+        "language": "sw",
+        "text": "Huwezi kupata chochote bure."
+      },
+      {
+        "language": "ka",
+        "text": "უფასოდ ვერაფერს მიიღებ."
+      },
+      {
+        "language": "fi",
+        "text": "Ilmaiseksi ei saa mitään."
+      },
+      {
+        "language": "zh-CN",
+        "text": "天下没有免费的午餐。"
+      },
+      {
+        "language": "eu",
+        "text": "Ez dago doako bazkaririk bezalakorik."
+      },
+      {
+        "language": "mg",
+        "text": "Tsy misy sakafo antoandro maimaim-poana izany."
+      },
+      {
+        "language": "th",
+        "text": "ไม่มีอะไรได้มาฟรีในโลกนี้"
+      },
+      {
+        "language": "en",
+        "text": "Nothing comes for free in this world."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Pepino de mar (Holothuria fuscogilva), parque nacional Ras Muhammad, Egipto, 2022-03-28, DD 119",
+    "artist": "Diego Delso",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Pepino_de_mar_(Holothuria_fuscogilva),_parque_nacional_Ras_Muhammad,_Egipto,_2022-03-28,_DD_119.jpg",
+    "share_alike": true,
+    "credit_line": "Pepino de mar (Holothuria fuscogilva), parque nacional Ras Muhammad, Egipto, 202… · Diego Delso · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
