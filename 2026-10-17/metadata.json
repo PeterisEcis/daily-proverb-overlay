@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-17",
+  "source": {
+    "file_title": "File:Purple beautyberry, October 2015 - Stacking.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Purple_beautyberry%2C_October_2015_-_Stacking.jpg/1920px-Purple_beautyberry%2C_October_2015_-_Stacking.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1327,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "People who live in glass houses shouldn't throw stones at other people.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/those_who_live_in_glass_houses_shouldn%27t_throw_stones",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Those who live in glass houses shouldn't throw stones",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "ガラスの家に住む者は石を投げてはならない"
+      },
+      {
+        "language": "sw",
+        "text": "Wale wanaoishi katika nyumba za vioo hawapaswi kurusha mawe."
+      },
+      {
+        "language": "ka",
+        "text": "ვინც შუშის სახლებში ცხოვრობს, ქვები არ უნდა ისროლოს."
+      },
+      {
+        "language": "fi",
+        "text": "Lasitaloissa asuvien ei pitäisi heitellä kiviä."
+      },
+      {
+        "language": "zh-CN",
+        "text": "住在玻璃房子里的人不应该扔石头。"
+      },
+      {
+        "language": "eu",
+        "text": "Kristalezko etxeetan bizi direnek ez lukete harririk bota behar."
+      },
+      {
+        "language": "mg",
+        "text": "Ireo izay mipetraka amin'ny trano fitaratra dia tsy tokony hitora-bato."
+      },
+      {
+        "language": "th",
+        "text": "คนที่อาศัยอยู่ในบ้านกระจกไม่ควรปาหินใส่คนอื่น"
+      },
+      {
+        "language": "en",
+        "text": "People who live in glass houses shouldn't throw stones at other people."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Purple beautyberry, October 2015 - Stacking",
+    "artist": "Laitche",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Purple_beautyberry,_October_2015_-_Stacking.jpg",
+    "share_alike": true,
+    "credit_line": "Purple beautyberry, October 2015 - Stacking · Laitche · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 82,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1592
+  }
+}
