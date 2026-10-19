@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-19",
+  "source": {
+    "file_title": "File:Bengal tiger in Sanjay Dubri Tiger Reserve December 2024 by Tisha Mukherjee 11.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Bengal_tiger_in_Sanjay_Dubri_Tiger_Reserve_December_2024_by_Tisha_Mukherjee_11.jpg/1920px-Bengal_tiger_in_Sanjay_Dubri_Tiger_Reserve_December_2024_by_Tisha_Mukherjee_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Don't regret what has already happened.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/don%27t_cry_over_spilled_milk",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Don't cry over spilled milk",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "こぼれたミルクを嘆くな"
+      },
+      {
+        "language": "sw",
+        "text": "Usilalamike kuhusu maziwa yaliyomwagika."
+      },
+      {
+        "language": "ka",
+        "text": "დაღვრილ რძეზე ნუ წუწუნებ."
+      },
+      {
+        "language": "fi",
+        "text": "Älä itke läikkyneen maidon perään."
+      },
+      {
+        "language": "zh-CN",
+        "text": "不要为打翻的牛奶哭泣。"
+      },
+      {
+        "language": "eu",
+        "text": "Ez negar egin isuritako esneagatik."
+      },
+      {
+        "language": "mg",
+        "text": "Aza mitomany noho ny ronono raraka."
+      },
+      {
+        "language": "th",
+        "text": "อย่าเสียใจกับเรื่องที่เกิดขึ้นไปแล้ว"
+      },
+      {
+        "language": "en",
+        "text": "Don't regret what has already happened."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Bengal tiger in Sanjay Dubri Tiger Reserve December 2024 by Tisha Mukherjee 11",
+    "artist": "Tisha Mukherjee",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_in_Sanjay_Dubri_Tiger_Reserve_December_2024_by_Tisha_Mukherjee_11.jpg",
+    "share_alike": true,
+    "credit_line": "Bengal tiger in Sanjay Dubri Tiger Reserve December 2024 by Tisha Mukherjee… · Tisha Mukherjee · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
