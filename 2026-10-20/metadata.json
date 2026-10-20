@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-20",
+  "source": {
+    "file_title": "File:Gewone fopzwam (Laccaria laccata). Locatie, Paddenstoelenreservaat. 14-10-2025. (d.j.b).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Gewone_fopzwam_%28Laccaria_laccata%29._Locatie%2C_Paddenstoelenreservaat._14-10-2025._%28d.j.b%29.jpg/1920px-Gewone_fopzwam_%28Laccaria_laccata%29._Locatie%2C_Paddenstoelenreservaat._14-10-2025._%28d.j.b%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1280,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Laziness is the devil's game.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/idle_hands_are_the_Devil%27s_playthings",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Idle hands are the Devil's playthings",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "怠惰な手は悪魔の遊び道具である"
+      },
+      {
+        "language": "sw",
+        "text": "Mikono mvivu ni kitu cha kuchezea cha shetani."
+      },
+      {
+        "language": "ka",
+        "text": "ზარმაცი ხელები ეშმაკის სათამაშოა."
+      },
+      {
+        "language": "fi",
+        "text": "Laiskat kädet ovat paholaisen leikkikalu."
+      },
+      {
+        "language": "zh-CN",
+        "text": "懒惰是魔鬼的玩物。"
+      },
+      {
+        "language": "eu",
+        "text": "Nagikeria deabruaren jostailua da."
+      },
+      {
+        "language": "mg",
+        "text": "Filalaovan'ny devoly ny hakamoana."
+      },
+      {
+        "language": "th",
+        "text": "ความเกียจคร้านคือเกมของปีศาจ"
+      },
+      {
+        "language": "en",
+        "text": "Laziness is the devil's game."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Gewone fopzwam (Laccaria laccata). Locatie, Paddenstoelenreservaat. 14-10-2025. (d.j.b)",
+    "artist": "Dominicus Johannes Bergsma.",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Gewone_fopzwam_(Laccaria_laccata)._Locatie,_Paddenstoelenreservaat._14-10-2025._(d.j.b).jpg",
+    "share_alike": true,
+    "credit_line": "Gewone fopzwam (Laccaria laccata). Locatie, Paddenstoelenreserva… · Dominicus Johannes Bergsma. · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 79,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1536
+  }
+}
