@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-21",
+  "source": {
+    "file_title": "File:Hoverfly October 2007-21.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Hoverfly_October_2007-21.jpg/1920px-Hoverfly_October_2007-21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1293,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "This law is utterly ridiculous.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/the_law_is_an_ass",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "The law is an ass",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "法律はバカだ"
+      },
+      {
+        "language": "sw",
+        "text": "Sheria ni ya kijinga."
+      },
+      {
+        "language": "ka",
+        "text": "კანონი სისულელეა."
+      },
+      {
+        "language": "fi",
+        "text": "Laki on hölynpölyä."
+      },
+      {
+        "language": "zh-CN",
+        "text": "这条法律简直荒谬。"
+      },
+      {
+        "language": "eu",
+        "text": "Lege hau guztiz absurdoa da."
+      },
+      {
+        "language": "mg",
+        "text": "Hadalana tanteraka ity lalàna ity."
+      },
+      {
+        "language": "th",
+        "text": "กฎหมายนี้งี่เง่าสิ้นดี"
+      },
+      {
+        "language": "en",
+        "text": "This law is utterly ridiculous."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Hoverfly October 2007-21",
+    "artist": "Alvesgaspar",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Hoverfly_October_2007-21.jpg",
+    "share_alike": true,
+    "credit_line": "Hoverfly October 2007-21 · Alvesgaspar · CC BY-SA 3.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 80,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1551
+  }
+}
