@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-22",
+  "source": {
+    "file_title": "File:Red Dragon scuplture during River Lee flooding, October 2023.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Red_Dragon_scuplture_during_River_Lee_flooding%2C_October_2023.jpg/1920px-Red_Dragon_scuplture_during_River_Lee_flooding%2C_October_2023.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "The branches will not break.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/a_twig_in_a_bundle_is_unbreakable",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "A twig in a bundle is unbreakable",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "束になった小枝は折れない"
+      },
+      {
+        "language": "sw",
+        "text": "Vijiti vya matawi havivunjiki."
+      },
+      {
+        "language": "ka",
+        "text": "ტოტები არ იმსხვრევა."
+      },
+      {
+        "language": "fi",
+        "text": "Oksat eivät katkea."
+      },
+      {
+        "language": "zh-CN",
+        "text": "树枝不会折断。"
+      },
+      {
+        "language": "eu",
+        "text": "Adarrak ez dira hautsiko."
+      },
+      {
+        "language": "mg",
+        "text": "Tsy ho tapaka ireo sampany."
+      },
+      {
+        "language": "th",
+        "text": "กิ่งไม้จะไม่หัก"
+      },
+      {
+        "language": "en",
+        "text": "The branches will not break."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Red Dragon scuplture during River Lee flooding, October 2023",
+    "artist": "Podstawko",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Red_Dragon_scuplture_during_River_Lee_flooding,_October_2023.jpg",
+    "share_alike": true,
+    "credit_line": "Red Dragon scuplture during River Lee flooding, October 2023 · Podstawko · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
