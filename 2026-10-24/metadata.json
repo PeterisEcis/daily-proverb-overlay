@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-24",
+  "source": {
+    "file_title": "File:016 Ocelot in Encontro das Águas State Park Photo by Giles Laurent.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/1920px-016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "The water level was too high, and the fishermen drowned.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/too_much_water_drowned_the_miller",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Too much water drowned the miller",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "水が多すぎて粉挽き職人が溺死した"
+      },
+      {
+        "language": "sw",
+        "text": "Kulikuwa na maji mengi sana na msagaji alizama."
+      },
+      {
+        "language": "ka",
+        "text": "ძალიან ბევრი წყალი იყო და მეთევზე დაიხრჩო."
+      },
+      {
+        "language": "fi",
+        "text": "Vettä oli liikaa ja kalastaja hukkui."
+      },
+      {
+        "language": "zh-CN",
+        "text": "水位太高，渔夫溺水身亡。"
+      },
+      {
+        "language": "eu",
+        "text": "Uraren maila altuegia zen, eta arrantzalea itota hil zen."
+      },
+      {
+        "language": "mg",
+        "text": "Avo loatra ny haavon'ny rano, ary maty an-drano ilay mpanjono."
+      },
+      {
+        "language": "th",
+        "text": "ระดับน้ำสูงเกินไป และชาวประมงก็จมน้ำเสียชีวิต"
+      },
+      {
+        "language": "en",
+        "text": "The water level was too high, and the fishermen drowned."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "016 Ocelot in Encontro das Águas State Park Photo by Giles Laurent",
+    "artist": "Giles Laurent",
+    "credit": "Own work, from gileslaurent.com",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg",
+    "share_alike": true,
+    "credit_line": "016 Ocelot in Encontro das Águas State Park Photo by Giles Laurent · Giles Laurent · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1280
+  }
+}
