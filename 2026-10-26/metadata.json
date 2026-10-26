@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-26",
+  "source": {
+    "file_title": "File:Horses grazing at Trunkol meadow, Jammu and Kashmir, India (crop).jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg/1920px-Horses_grazing_at_Trunkol_meadow%2C_Jammu_and_Kashmir%2C_India_%28crop%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1066,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Honey is more effective at attracting flies than vinegar.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/you_can_catch_more_flies_with_honey_than_with_vinegar",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "You can catch more flies with honey than with vinegar",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "ハチミツを使えば、酢よりも多くのハエを捕まえることができる。"
+      },
+      {
+        "language": "sw",
+        "text": "Asali inaweza kukamata nzi wengi zaidi kuliko siki."
+      },
+      {
+        "language": "ka",
+        "text": "თაფლს ძმარზე მეტი ბუზის დაჭერა შეუძლია."
+      },
+      {
+        "language": "fi",
+        "text": "Hunaja voi pyydystää enemmän kärpäsiä kuin etikka."
+      },
+      {
+        "language": "zh-CN",
+        "text": "蜂蜜比醋更能吸引苍蝇。"
+      },
+      {
+        "language": "eu",
+        "text": "Eztiak ozpinak baino eraginkorrago erakartzen ditu euliak."
+      },
+      {
+        "language": "mg",
+        "text": "Mandaitra kokoa ny tantely mba hisarihana lalitra noho ny vinaingitra."
+      },
+      {
+        "language": "th",
+        "text": "น้ำผึ้งมีประสิทธิภาพในการดึงดูดแมลงวันมากกว่าน้ำส้มสายชู"
+      },
+      {
+        "language": "en",
+        "text": "Honey is more effective at attracting flies than vinegar."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Horses grazing at Trunkol meadow, Jammu and Kashmir, India (crop)",
+    "artist": "UnpetitproleX",
+    "credit": "Own work",
+    "license_short_name": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Horses_grazing_at_Trunkol_meadow,_Jammu_and_Kashmir,_India_(crop).jpg",
+    "share_alike": false,
+    "credit_line": "Horses grazing at Trunkol meadow, Jammu and Kashmir, India (crop) · UnpetitproleX · CC BY 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1280
+  }
+}
