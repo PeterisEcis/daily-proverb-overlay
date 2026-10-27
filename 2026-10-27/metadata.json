@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-27",
+  "source": {
+    "file_title": "File:Ankara asv2021-10 img17 Atakule.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Ankara_asv2021-10_img17_Atakule.jpg/1920px-Ankara_asv2021-10_img17_Atakule.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1280,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Let's eat, drink, and have fun!",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/eat%2C_drink_and_be_merry",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Eat, drink and be merry",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "食べて飲んで楽しもう"
+      },
+      {
+        "language": "sw",
+        "text": "Tule, tunywe, na tufurahie!"
+      },
+      {
+        "language": "ka",
+        "text": "მოდით, ვჭამოთ, დავლიოთ და ვიმხიარულოთ!"
+      },
+      {
+        "language": "fi",
+        "text": "Syödään, juodaan ja pidetään hauskaa!"
+      },
+      {
+        "language": "zh-CN",
+        "text": "咱们吃喝玩乐吧！"
+      },
+      {
+        "language": "eu",
+        "text": "Jan dezagun, edan dezagun eta ondo pasa dezagun!"
+      },
+      {
+        "language": "mg",
+        "text": "Andao hihinana, hisotro ary hifaly!"
+      },
+      {
+        "language": "th",
+        "text": "มาทานอาหาร ดื่มเครื่องดื่ม และสนุกสนานกันเถอะ!"
+      },
+      {
+        "language": "en",
+        "text": "Let's eat, drink, and have fun!"
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Ankara asv2021-10 img17 Atakule",
+    "artist": "A.Savin",
+    "credit": "Own work",
+    "license_short_name": "FAL",
+    "license_url": "http://artlibre.org/licence/lal/en",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Ankara_asv2021-10_img17_Atakule.jpg",
+    "share_alike": true,
+    "credit_line": "Ankara asv2021-10 img17 Atakule · A.Savin · FAL"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 79,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1536
+  }
+}
