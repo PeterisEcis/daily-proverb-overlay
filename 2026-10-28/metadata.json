@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-28",
+  "source": {
+    "file_title": "File:Moscow TverZastava Vityaz asv2018-09.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Moscow_TverZastava_Vityaz_asv2018-09.jpg/1920px-Moscow_TverZastava_Vityaz_asv2018-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 900,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Transforming a house into a truly habitable space requires a great deal of experience.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/it_takes_a_lot_of_living_to_make_a_house_a_home",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "It takes a lot of living to make a house a home",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "家を住まいにするには、多くの生活経験が必要だ。"
+      },
+      {
+        "language": "sw",
+        "text": "Kuifanya nyumba iwe nyumba yako kunahitaji uzoefu mwingi wa kuishi."
+      },
+      {
+        "language": "ka",
+        "text": "სახლის სახლად ქცევას დიდი ცხოვრებისეული გამოცდილება სჭირდება."
+      },
+      {
+        "language": "fi",
+        "text": "Kodin tekeminen kodiksi vaatii paljon elämänkokemusta."
+      },
+      {
+        "language": "zh-CN",
+        "text": "把房子变成真正的家需要丰富的生活阅历。"
+      },
+      {
+        "language": "eu",
+        "text": "Etxe bat benetako etxe bihurtzeak bizipen handia eskatzen du."
+      },
+      {
+        "language": "mg",
+        "text": "Mitaky traikefa betsaka ny fanovana trano ho trano tena izy."
+      },
+      {
+        "language": "th",
+        "text": "การปรับปรุงบ้านให้กลายเป็นที่อยู่อาศัยที่แท้จริงนั้นต้องอาศัยประสบการณ์มากมาย"
+      },
+      {
+        "language": "en",
+        "text": "Transforming a house into a truly habitable space requires a great deal of experience."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Moscow TverZastava Vityaz asv2018-09",
+    "artist": "A.Savin",
+    "credit": "Own work",
+    "license_short_name": "FAL",
+    "license_url": "http://artlibre.org/licence/lal/en",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Moscow_TverZastava_Vityaz_asv2018-09.jpg",
+    "share_alike": true,
+    "credit_line": "Moscow TverZastava Vityaz asv2018-09 · A.Savin · FAL"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 56,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1080
+  }
+}
