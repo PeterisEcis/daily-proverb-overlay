@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-29",
+  "source": {
+    "file_title": "File:Vignes près du Pic de Vissou - October 2020.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Vignes_pr%C3%A8s_du_Pic_de_Vissou_-_October_2020.jpg/1920px-Vignes_pr%C3%A8s_du_Pic_de_Vissou_-_October_2020.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1000,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Christmas comes only once a year.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/Christmas_comes_but_once_a_year",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Christmas comes but once a year",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "クリスマスは年に一度しか来ない"
+      },
+      {
+        "language": "sw",
+        "text": "Krismasi huja mara moja tu kwa mwaka."
+      },
+      {
+        "language": "ka",
+        "text": "შობა მხოლოდ წელიწადში ერთხელ მოდის."
+      },
+      {
+        "language": "fi",
+        "text": "Joulu tulee vain kerran vuodessa."
+      },
+      {
+        "language": "zh-CN",
+        "text": "圣诞节一年只有一次。"
+      },
+      {
+        "language": "eu",
+        "text": "Gabonak urtean behin bakarrik etortzen dira."
+      },
+      {
+        "language": "mg",
+        "text": "Indray mandeha isan-taona ihany no misy ny Krismasy."
+      },
+      {
+        "language": "th",
+        "text": "วันคริสต์มาสมาถึงเพียงปีละครั้งเท่านั้น"
+      },
+      {
+        "language": "en",
+        "text": "Christmas comes only once a year."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Vignes près du Pic de Vissou - October 2020",
+    "artist": "Christian Ferrer",
+    "credit": "Own work",
+    "license_short_name": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Vignes_pr%C3%A8s_du_Pic_de_Vissou_-_October_2020.jpg",
+    "share_alike": false,
+    "credit_line": "Vignes près du Pic de Vissou - October 2020 · Christian Ferrer · CC BY 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 62,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1200
+  }
+}
