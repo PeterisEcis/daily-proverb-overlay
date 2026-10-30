@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-10-30",
+  "source": {
+    "file_title": "File:CH.ZG.Walchwil Walchwilerberg Heumoosegg 2016-10-30 OrigX-R gp.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/CH.ZG.Walchwil_Walchwilerberg_Heumoosegg_2016-10-30_OrigX-R_gp.jpg/1920px-CH.ZG.Walchwil_Walchwilerberg_Heumoosegg_2016-10-30_OrigX-R_gp.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1118,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Go find the person who brought you here.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/leave_with_the_one_what_brought_ya",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Leave with the one what brought ya",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "あなたを連れてきた人と一緒に去る"
+      },
+      {
+        "language": "sw",
+        "text": "Ondoka na mtu aliyekuleta hapa."
+      },
+      {
+        "language": "ka",
+        "text": "წადი იმ ადამიანთან, ვინც აქ მოგიყვანა."
+      },
+      {
+        "language": "fi",
+        "text": "Mene sen henkilön luokse, joka toi sinut tänne."
+      },
+      {
+        "language": "zh-CN",
+        "text": "去找带你来这里的那个人。"
+      },
+      {
+        "language": "eu",
+        "text": "Zoaz hona ekarri zaituen pertsonaren bila."
+      },
+      {
+        "language": "mg",
+        "text": "Mandehana tadiavo ilay olona nitondra anao teto."
+      },
+      {
+        "language": "th",
+        "text": "ไปหาคนที่พาคุณมาที่นี่"
+      },
+      {
+        "language": "en",
+        "text": "Go find the person who brought you here."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "CH.ZG.Walchwil Walchwilerberg Heumoosegg 2016-10-30 OrigX-R gp",
+    "artist": "NOTE: This image is a panorama of Sunrays near Walchwil, Switzerland consisting of 7 frames that were merged or stitched in Kolor Autopano Pro. As a result, this image necessarily underwent some form of digital manipulation. These manipulations may include blending, blurring, cloning, and color and perspective adjustments. As a result of these adjustments, the image content may be slightly different from reality at the points where multiple images were combined. This manipulation is often required due to lens, perspective, and parallax distortions.",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:CH.ZG.Walchwil_Walchwilerberg_Heumoosegg_2016-10-30_OrigX-R_gp.jpg",
+    "share_alike": true,
+    "credit_line": "CH.ZG.Walch… · NOTE: This image is a panorama of Sunrays near Walchwil, Switzerland consisting of 7 frames that were merged or stitched in Kolor Autopano Pro. As a result, this image necessarily underwent some form of digital manipulation. These manipulations may include blending, blurring, cloning, and color and perspective adjustments. As a result of these adjustments, the image content may be slightly different from reality at the points where multiple images were combined. This manipulation is often required due to lens, perspective, and parallax distortions. · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 69,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1342
+  }
+}
