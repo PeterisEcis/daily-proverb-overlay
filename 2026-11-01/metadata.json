@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-01",
+  "source": {
+    "file_title": "File:Església Santa Margalida - Santa Margalida - Mallorca - stained-glass windows.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Esgl%C3%A9sia_Santa_Margalida_-_Santa_Margalida_-_Mallorca_-_stained-glass_windows.jpg/1920px-Esgl%C3%A9sia_Santa_Margalida_-_Santa_Margalida_-_Mallorca_-_stained-glass_windows.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1788,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "When the cat is away from home, the mice will play with the cat.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/when_the_cat%27s_away_the_mice_will_play",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "When the cat's away the mice will play",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "猫がいない間にネズミが遊ぶ"
+      },
+      {
+        "language": "sw",
+        "text": "Panya hucheza paka akiwa mbali"
+      },
+      {
+        "language": "ka",
+        "text": "თაგვი კატასთან თამაშობს, როცა ის შორსაა."
+      },
+      {
+        "language": "fi",
+        "text": "Hiiri leikkii kissan kanssa, kun tämä on poissa."
+      },
+      {
+        "language": "zh-CN",
+        "text": "猫不在家的时候，老鼠会和猫玩耍。"
+      },
+      {
+        "language": "eu",
+        "text": "Katua etxean ez dagoenean, saguak katuarekin jolasten dira."
+      },
+      {
+        "language": "mg",
+        "text": "Rehefa tsy ao an-trano ny saka dia milalao amin'ilay saka ny totozy."
+      },
+      {
+        "language": "th",
+        "text": "เมื่อแมวไม่อยู่บ้าน หนูจะเล่นกับแมว"
+      },
+      {
+        "language": "en",
+        "text": "When the cat is away from home, the mice will play with the cat."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Església Santa Margalida - Santa Margalida - Mallorca - stained-glass windows",
+    "artist": "H. Zell",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Esgl%C3%A9sia_Santa_Margalida_-_Santa_Margalida_-_Mallorca_-_stained-glass_windows.jpg",
+    "share_alike": true,
+    "credit_line": "Església Santa Margalida - Santa Margalida - Mallorca - stained-glass windows · H. Zell · CC BY-SA 3.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 111,
+    "quote_lines": 3,
+    "width": 1920,
+    "height": 2146
+  }
+}
