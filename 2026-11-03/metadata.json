@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-03",
+  "source": {
+    "file_title": "File:Pez ballesta ondulado (Balistapus undulatus), mar Rojo, Egipto, 2023-04-15, DD 45.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Pez_ballesta_ondulado_%28Balistapus_undulatus%29%2C_mar_Rojo%2C_Egipto%2C_2023-04-15%2C_DD_45.jpg/1920px-Pez_ballesta_ondulado_%28Balistapus_undulatus%29%2C_mar_Rojo%2C_Egipto%2C_2023-04-15%2C_DD_45.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Spectators will have the opportunity to watch most of the competition.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/lookers-on_see_most_of_the_game",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Lookers-on see most of the game",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "観客は試合のほとんどを見ることができる"
+      },
+      {
+        "language": "sw",
+        "text": "Watazamaji wanaweza kutazama sehemu kubwa ya mechi."
+      },
+      {
+        "language": "ka",
+        "text": "მაყურებლებს მატჩის უმეტესი ნაწილის ყურება შეეძლებათ."
+      },
+      {
+        "language": "fi",
+        "text": "Yleisö pääsee seuraamaan suurimman osan ottelusta."
+      },
+      {
+        "language": "zh-CN",
+        "text": "观众将能够观看大部分比赛。"
+      },
+      {
+        "language": "eu",
+        "text": "Ikusleek partida gehienak ikusteko aukera izango dute."
+      },
+      {
+        "language": "mg",
+        "text": "Hanana fahafahana hijery ny ankamaroan'ny lalao ny mpijery."
+      },
+      {
+        "language": "th",
+        "text": "ผู้ชมจะมีโอกาสได้ชมการแข่งขันส่วนใหญ่"
+      },
+      {
+        "language": "en",
+        "text": "Spectators will have the opportunity to watch most of the competition."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Pez ballesta ondulado (Balistapus undulatus), mar Rojo, Egipto, 2023-04-15, DD 45",
+    "artist": "Diego Delso",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Pez_ballesta_ondulado_(Balistapus_undulatus),_mar_Rojo,_Egipto,_2023-04-15,_DD_45.jpg",
+    "share_alike": true,
+    "credit_line": "Pez ballesta ondulado (Balistapus undulatus), mar Rojo, Egipto, 2023-04-15, DD 45 · Diego Delso · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1280
+  }
+}
