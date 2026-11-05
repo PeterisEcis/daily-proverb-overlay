@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-05",
+  "source": {
+    "file_title": "File:Norderney, Dünenlandschaft, Wegweiser -- 2025 -- 9437.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Norderney%2C_D%C3%BCnenlandschaft%2C_Wegweiser_--_2025_--_9437.jpg/1920px-Norderney%2C_D%C3%BCnenlandschaft%2C_Wegweiser_--_2025_--_9437.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Good advice alone is not enough. Good advice coupled with the right tools is the key to greater success.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/you_get_more_with_a_kind_word_and_a_gun_than_you_do_with_a_kind_word_alone",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "You get more with a kind word and a gun than you do with a kind word alone",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "優しい言葉だけよりも、優しい言葉と銃があればもっと多くのものが手に入る"
+      },
+      {
+        "language": "sw",
+        "text": "Maneno ya fadhili pekee hayatoshi; kwa maneno ya fadhili na bunduki, unaweza kupata mengi zaidi."
+      },
+      {
+        "language": "ka",
+        "text": "მხოლოდ კეთილი სიტყვები საკმარისი არ არის; კეთილი სიტყვებითა და იარაღით ბევრად მეტის მიღწევა შეიძლება."
+      },
+      {
+        "language": "fi",
+        "text": "Pelkät ystävälliset sanat eivät riitä; paljon enemmän voidaan saada aikaan ystävällisillä sanoilla ja aseilla."
+      },
+      {
+        "language": "zh-CN",
+        "text": "光靠好言相劝是不够的；好言相劝再加上武器，才能取得更大的成就。"
+      },
+      {
+        "language": "eu",
+        "text": "Aholku onak bakarrik ez dira nahikoa; aholku onak armekin konbinatuta dira arrakasta handiagoaren gakoa."
+      },
+      {
+        "language": "mg",
+        "text": "Tsy ampy ny torohevitra tsara fotsiny; ny torohevitra tsara ampiarahina amin'ny fitaovam-piadiana no fanalahidin'ny fahombiazana lehibe kokoa."
+      },
+      {
+        "language": "th",
+        "text": "คำแนะนำที่ดีเพียงอย่างเดียวไม่เพียงพอ คำแนะนำที่ดีควบคู่ไปกับเครื่องมือที่เหมาะสมคือหัวใจสำคัญของความสำเร็จที่ยิ่งใหญ่กว่า"
+      },
+      {
+        "language": "en",
+        "text": "Good advice alone is not enough. Good advice coupled with the right tools is the key to greater success."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Norderney, Dünenlandschaft, Wegweiser -- 2025 -- 9437",
+    "artist": "Dietmar Rabich",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Norderney,_D%C3%BCnenlandschaft,_Wegweiser_--_2025_--_9437.jpg",
+    "share_alike": true,
+    "credit_line": "Norderney, Dünenlandschaft, Wegweiser -- 2025 -- 9437 · Dietmar Rabich · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 3,
+    "width": 1920,
+    "height": 1280
+  }
+}
