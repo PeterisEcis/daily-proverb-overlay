@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-06",
+  "source": {
+    "file_title": "File:Common wombat (Vombatus ursinus tasmaniensis) juvenile Maria Island.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Common_wombat_%28Vombatus_ursinus_tasmaniensis%29_juvenile_Maria_Island.jpg/1920px-Common_wombat_%28Vombatus_ursinus_tasmaniensis%29_juvenile_Maria_Island.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1392,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Even eating half a loaf of bread is better than eating nothing at all.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/half_a_loaf_is_better_than_none",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Half a loaf is better than none",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "半分のパンでも、全くないよりはましだ"
+      },
+      {
+        "language": "sw",
+        "text": "Hata nusu ya mkate ni bora kuliko kutokula chochote."
+      },
+      {
+        "language": "ka",
+        "text": "ნახევარი პურიც კი ჯობია არაფრის ჭამას."
+      },
+      {
+        "language": "fi",
+        "text": "Jopa puoli leipää on parempi kuin ei mitään syömistä."
+      },
+      {
+        "language": "zh-CN",
+        "text": "哪怕只吃半条面包也比什么都不吃强。"
+      },
+      {
+        "language": "eu",
+        "text": "Ogi erdi bat jatea ere hobea da ezer ez jatea baino."
+      },
+      {
+        "language": "mg",
+        "text": "Na dia ny mihinana antsasaky ny mofo aza dia aleo toy izay tsy mihinana na inona na inona."
+      },
+      {
+        "language": "th",
+        "text": "แม้การกินขนมปังครึ่งก้อนก็ยังดีกว่าการไม่กินอะไรเลย"
+      },
+      {
+        "language": "en",
+        "text": "Even eating half a loaf of bread is better than eating nothing at all."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Common wombat (Vombatus ursinus tasmaniensis) juvenile Maria Island",
+    "artist": "Charles J. Sharp",
+    "credit": "Own work, from Sharp Photography, sharpphotography.co.uk",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Common_wombat_(Vombatus_ursinus_tasmaniensis)_juvenile_Maria_Island.jpg",
+    "share_alike": true,
+    "credit_line": "Common wombat (Vombatus ursinus tasmaniensis) juvenile Maria Island · Charles J. Sharp · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 86,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1671
+  }
+}
