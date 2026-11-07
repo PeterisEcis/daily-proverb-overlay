@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-07",
+  "source": {
+    "file_title": "File:Aekingerzand Nationaal Park Drents-Friese Wold. 11-08-2025. (actm.) 10.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Aekingerzand_Nationaal_Park_Drents-Friese_Wold._11-08-2025._%28actm.%29_10.jpg/1920px-Aekingerzand_Nationaal_Park_Drents-Friese_Wold._11-08-2025._%28actm.%29_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Time and tide wait for no one.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/time_and_tide_stay_for_no_man",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Time and tide stay for no man",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "時と潮の流れは誰をも待ってはくれない"
+      },
+      {
+        "language": "sw",
+        "text": "Wakati na mawimbi hayamsubiri mtu yeyote."
+      },
+      {
+        "language": "ka",
+        "text": "დრო და ტალღები არავის ელოდება."
+      },
+      {
+        "language": "fi",
+        "text": "Aika ja aallot eivät odota ketään."
+      },
+      {
+        "language": "zh-CN",
+        "text": "时间和浪潮不会等人。"
+      },
+      {
+        "language": "eu",
+        "text": "Denborak eta itsasgorak ez dute inor itxaroten."
+      },
+      {
+        "language": "mg",
+        "text": "Tsy miandry na iza na iza ny fotoana sy ny onja."
+      },
+      {
+        "language": "th",
+        "text": "เวลาและกระแสน้ำไม่รอใคร"
+      },
+      {
+        "language": "en",
+        "text": "Time and tide wait for no one."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Aekingerzand Nationaal Park Drents-Friese Wold. 11-08-2025. (actm.) 10",
+    "artist": "Agnes Monkelbaan",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Aekingerzand_Nationaal_Park_Drents-Friese_Wold._11-08-2025._(actm.)_10.jpg",
+    "share_alike": true,
+    "credit_line": "Aekingerzand Nationaal Park Drents-Friese Wold. 11-08-2025. (actm.) 10 · Agnes Monkelbaan · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
