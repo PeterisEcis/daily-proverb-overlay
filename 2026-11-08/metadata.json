@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-08",
+  "source": {
+    "file_title": "File:002 Asian green bee-eaters in Keoladeo National Park Photo by Giles Laurent.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/002_Asian_green_bee-eaters_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg/1920px-002_Asian_green_bee-eaters_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "A dog's barking means it's being abused.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/it%27s_the_hit_dog_that_howls",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "It's the hit dog that howls",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "吠えるのは、殴られた犬だ"
+      },
+      {
+        "language": "sw",
+        "text": "Mbwa anayebweka ndiye aliyepigwa."
+      },
+      {
+        "language": "ka",
+        "text": "მყეფარე ძაღლი ის არის, ვისაც დარტყმა მიაყენეს."
+      },
+      {
+        "language": "fi",
+        "text": "Haukkuva koira on sellainen, jota on lyöty."
+      },
+      {
+        "language": "zh-CN",
+        "text": "吠叫的狗说明它挨过打。"
+      },
+      {
+        "language": "eu",
+        "text": "Txakur zaunka batek jipoitu egin dutela adierazten du."
+      },
+      {
+        "language": "mg",
+        "text": "Ny alika mivovo dia midika fa nokapohina izy."
+      },
+      {
+        "language": "th",
+        "text": "เสียงเห่าของสุนัขหมายความว่ามันถูกทำร้าย"
+      },
+      {
+        "language": "en",
+        "text": "A dog's barking means it's being abused."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "002 Asian green bee-eaters in Keoladeo National Park Photo by Giles Laurent",
+    "artist": "Giles Laurent",
+    "credit": "Own work, from gileslaurent.com",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:002_Asian_green_bee-eaters_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg",
+    "share_alike": true,
+    "credit_line": "002 Asian green bee-eaters in Keoladeo National Park Photo by Giles Laurent · Giles Laurent · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
