@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-09",
+  "source": {
+    "file_title": "File:Panorama of Himalayas from Ranikhet, Uttarakhand, India.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Panorama_of_Himalayas_from_Ranikhet%2C_Uttarakhand%2C_India.jpg/1920px-Panorama_of_Himalayas_from_Ranikhet%2C_Uttarakhand%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 465,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Birds of the same species tend to stick together in flocks.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/birds_of_a_feather_flock_together",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Birds of a feather flock together",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "類は友を呼ぶ"
+      },
+      {
+        "language": "sw",
+        "text": "Ndege wa manyoya moja huruka pamoja."
+      },
+      {
+        "language": "ka",
+        "text": "ერთი ბუმბულის ჩიტები ერთად დასხდებიან."
+      },
+      {
+        "language": "fi",
+        "text": "Vakka kantensa valitsee."
+      },
+      {
+        "language": "zh-CN",
+        "text": "物以类聚，人以群分。"
+      },
+      {
+        "language": "eu",
+        "text": "Luma bereko txoriak elkarrekin biltzen dira."
+      },
+      {
+        "language": "mg",
+        "text": "Miara-mirohotra ireo vorona mitovy volom-borona."
+      },
+      {
+        "language": "th",
+        "text": "นกชนิดเดียวกันย่อมอยู่รวมกันเป็นฝูง"
+      },
+      {
+        "language": "en",
+        "text": "Birds of the same species tend to stick together in flocks."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Panorama of Himalayas from Ranikhet, Uttarakhand, India",
+    "artist": "Original: Harshit SR Derivative work: UnpetitproleX",
+    "credit": "This file was derived from: Panorama of Himalayas.jpg",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Panorama_of_Himalayas_from_Ranikhet,_Uttarakhand,_India.jpg",
+    "share_alike": true,
+    "credit_line": "Panorama of Himalayas from Ranikhet, Utt… · Original: Harshit SR Derivative work: UnpetitproleX · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 29,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 558
+  }
+}
