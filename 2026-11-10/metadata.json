@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-10",
+  "source": {
+    "file_title": "File:Verdun – Cathédrale Notre-Dame – Crypte 2025 08 16.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Verdun_%E2%80%93_Cath%C3%A9drale_Notre-Dame_%E2%80%93_Crypte_2025_08_16.jpg/1920px-Verdun_%E2%80%93_Cath%C3%A9drale_Notre-Dame_%E2%80%93_Crypte_2025_08_16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "I swear, I swear.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/bis_dat_qui_cito_dat",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Bis dat qui cito dat",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "Bis dat qui cito dat"
+      },
+      {
+        "language": "sw",
+        "text": "Bis dat qui cito dat"
+      },
+      {
+        "language": "ka",
+        "text": "ბის დატ კი სიტო დატ"
+      },
+      {
+        "language": "fi",
+        "text": "Bis dat ki sito dat"
+      },
+      {
+        "language": "zh-CN",
+        "text": "我发誓我发誓"
+      },
+      {
+        "language": "eu",
+        "text": "Zin egiten dut, zin egiten dut"
+      },
+      {
+        "language": "mg",
+        "text": "Mianiana aho, mianiana aho"
+      },
+      {
+        "language": "th",
+        "text": "ฉันสาบาน ฉันสาบาน"
+      },
+      {
+        "language": "en",
+        "text": "I swear, I swear."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Verdun – Cathédrale Notre-Dame – Crypte 2025 08 16",
+    "artist": "Andreas F. Borchert",
+    "credit": "Self-photographed",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Verdun_%E2%80%93_Cath%C3%A9drale_Notre-Dame_%E2%80%93_Crypte_2025_08_16.jpg",
+    "share_alike": true,
+    "credit_line": "Verdun – Cathédrale Notre-Dame – Crypte 2025 08 16 · Andreas F. Borchert · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
