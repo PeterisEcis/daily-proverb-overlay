@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-13",
+  "source": {
+    "file_title": "File:Indian Courser in Bhigwan August 2025 by Tisha Mukherjee 07.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Indian_Courser_in_Bhigwan_August_2025_by_Tisha_Mukherjee_07.jpg/1920px-Indian_Courser_in_Bhigwan_August_2025_by_Tisha_Mukherjee_07.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1066,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "An idle hand is a tool of the devil.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/idle_hands_are_the_devil%27s_tools",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Idle hands are the devil's tools",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "怠惰な手は悪魔の道具である"
+      },
+      {
+        "language": "sw",
+        "text": "Mikono mvivu ni zana za shetani."
+      },
+      {
+        "language": "ka",
+        "text": "ზარმაცი ხელები ეშმაკის იარაღებია."
+      },
+      {
+        "language": "fi",
+        "text": "Laiskat kädet ovat paholaisen työkaluja."
+      },
+      {
+        "language": "zh-CN",
+        "text": "懒惰的手是魔鬼的工具。"
+      },
+      {
+        "language": "eu",
+        "text": "Esku alferrak deabruaren tresnak dira."
+      },
+      {
+        "language": "mg",
+        "text": "Fitaovan'ny devoly ny tanana tsy miasa."
+      },
+      {
+        "language": "th",
+        "text": "มือที่ว่างงานคือเครื่องมือของปีศาจ"
+      },
+      {
+        "language": "en",
+        "text": "An idle hand is a tool of the devil."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Indian Courser in Bhigwan August 2025 by Tisha Mukherjee 07",
+    "artist": "Tisha Mukherjee",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Indian_Courser_in_Bhigwan_August_2025_by_Tisha_Mukherjee_07.jpg",
+    "share_alike": true,
+    "credit_line": "Indian Courser in Bhigwan August 2025 by Tisha Mukherjee 07 · Tisha Mukherjee · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
