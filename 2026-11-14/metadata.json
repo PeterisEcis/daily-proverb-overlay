@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-14",
+  "source": {
+    "file_title": "File:Eastern quoll (Dasyurus viverrinus) fawn morph Esk Valley.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg/1920px-Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "When you encounter a problem, the first thing you should do is stop digging for it.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/when_you_find_yourself_in_a_hole%2C_the_first_thing_to_do_is_stop_digging",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "When you find yourself in a hole, the first thing to do is stop digging",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "自分が窮地に陥ったとき、まず最初にすべきことは、掘るのをやめることだ。"
+      },
+      {
+        "language": "sw",
+        "text": "Unapojikuta katika hali ngumu, jambo la kwanza unalopaswa kufanya ni kuacha kuchimba."
+      },
+      {
+        "language": "ka",
+        "text": "როდესაც რთულ სიტუაციაში აღმოჩნდებით, პირველი, რაც უნდა გააკეთოთ, არის თხრის შეწყვეტა."
+      },
+      {
+        "language": "fi",
+        "text": "Kun kohtaat vaikean tilanteen, ensimmäinen asia, joka sinun tulee tehdä, on lopettaa kaivaminen."
+      },
+      {
+        "language": "zh-CN",
+        "text": "当你遇到困难时，首先应该做的就是停止挖掘。"
+      },
+      {
+        "language": "eu",
+        "text": "Zailtasunak dituzunean, egin behar duzun lehenengo gauza zulatzeari uztea da."
+      },
+      {
+        "language": "mg",
+        "text": "Rehefa sendra olana ianao dia ny zavatra voalohany tokony hataonao dia ny mijanona tsy mihady."
+      },
+      {
+        "language": "th",
+        "text": "เมื่อคุณพบเจอปัญหา สิ่งแรกที่คุณควรทำคือหยุดขุดคุ้ย"
+      },
+      {
+        "language": "en",
+        "text": "When you encounter a problem, the first thing you should do is stop digging for it."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Eastern quoll (Dasyurus viverrinus) fawn morph Esk Valley",
+    "artist": "Charles J. Sharp",
+    "credit": "Own work, from Sharp Photography, sharpphotography.co.uk",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Eastern_quoll_(Dasyurus_viverrinus)_fawn_morph_Esk_Valley.jpg",
+    "share_alike": true,
+    "credit_line": "Eastern quoll (Dasyurus viverrinus) fawn morph Esk Valley · Charles J. Sharp · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1280
+  }
+}
