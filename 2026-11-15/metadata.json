@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-15",
+  "source": {
+    "file_title": "File:Mirador del Velo de Novia, Seixal, Madeira, Portugal, 2019-05-30, DD 67.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Mirador_del_Velo_de_Novia%2C_Seixal%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_67.jpg/1920px-Mirador_del_Velo_de_Novia%2C_Seixal%2C_Madeira%2C_Portugal%2C_2019-05-30%2C_DD_67.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 2400,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "A good fence can help foster good relationships between neighbors.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/good_fences_make_good_neighbours",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Good fences make good neighbours",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "良い垣根は良い隣人関係を築く"
+      },
+      {
+        "language": "sw",
+        "text": "Uzio mzuri huendeleza mahusiano mazuri ya ujirani."
+      },
+      {
+        "language": "ka",
+        "text": "კარგი ღობე კეთილმეზობლურ ურთიერთობებს უწყობს ხელს."
+      },
+      {
+        "language": "fi",
+        "text": "Hyvä aita edistää hyviä naapuruussuhteita."
+      },
+      {
+        "language": "zh-CN",
+        "text": "好的篱笆有助于促进良好的邻里关系。"
+      },
+      {
+        "language": "eu",
+        "text": "Hesi onek auzokideen arteko harreman onak sustatzen lagun dezakete."
+      },
+      {
+        "language": "mg",
+        "text": "Afaka manampy amin'ny fampiroboroboana ny fifandraisana tsara eo amin'ny mpiara-monina ny fefy tsara."
+      },
+      {
+        "language": "th",
+        "text": "รั้วที่ดีสามารถช่วยส่งเสริมความสัมพันธ์ที่ดีระหว่างเพื่อนบ้านได้"
+      },
+      {
+        "language": "en",
+        "text": "A good fence can help foster good relationships between neighbors."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Mirador del Velo de Novia, Seixal, Madeira, Portugal, 2019-05-30, DD 67",
+    "artist": "Diego Delso",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Mirador_del_Velo_de_Novia,_Seixal,_Madeira,_Portugal,_2019-05-30,_DD_67.jpg",
+    "share_alike": true,
+    "credit_line": "Mirador del Velo de Novia, Seixal, Madeira, Portugal, 2019-05-30, DD 67 · Diego Delso · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 149,
+    "quote_lines": 4,
+    "width": 1920,
+    "height": 2880
+  }
+}
