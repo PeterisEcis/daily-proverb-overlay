@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-16",
+  "source": {
+    "file_title": "File:International hot air balloon festival in leon guanajuato mexico 2012.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg/1920px-International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 2301,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "The winner would benefit from the war.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/to_the_victor_go_the_spoils",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "To the victor go the spoils",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "勝者には戦利品が与えられる"
+      },
+      {
+        "language": "sw",
+        "text": "Mshindi atapewa nyara za vita."
+      },
+      {
+        "language": "ka",
+        "text": "გამარჯვებულს ომის ნადავლი გადაეცემა."
+      },
+      {
+        "language": "fi",
+        "text": "Voittajalle myönnetään sotasaalis."
+      },
+      {
+        "language": "zh-CN",
+        "text": "胜利者将获得战争战利品。"
+      },
+      {
+        "language": "eu",
+        "text": "Garaileak gerrako harrapakinak jasoko ditu."
+      },
+      {
+        "language": "mg",
+        "text": "Hahazo ny babo azo tamin'ny ady ny mpandresy."
+      },
+      {
+        "language": "th",
+        "text": "ผู้ชนะจะได้รับผลประโยชน์จากสงคราม"
+      },
+      {
+        "language": "en",
+        "text": "The winner would benefit from the war."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "International hot air balloon festival in leon guanajuato mexico 2012",
+    "artist": "Tomascastelazo",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:International_hot_air_balloon_festival_in_leon_guanajuato_mexico_2012.jpg",
+    "share_alike": true,
+    "credit_line": "International hot air balloon festival in leon guanajuato mexico 2012 · Tomascastelazo · CC BY-SA 3.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 143,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 2761
+  }
+}
