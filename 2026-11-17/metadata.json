@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-17",
+  "source": {
+    "file_title": "File:Trilogie \"Hexentanz\" -- 2025.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Trilogie_%22Hexentanz%22_--_2025.jpg/1920px-Trilogie_%22Hexentanz%22_--_2025.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 743,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "What one person considers trash may be a priceless treasure to another.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/one_man%27s_trash_is_another_man%27s_treasure",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "One man's trash is another man's treasure",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "ある人にとってのゴミは、別の人にとっての宝物だ。"
+      },
+      {
+        "language": "sw",
+        "text": "Kile ambacho mtu mmoja anakiona kama takataka, mwingine anaweza kukiona kama hazina."
+      },
+      {
+        "language": "ka",
+        "text": "რასაც ერთი ადამიანი ნაგავად აღიქვამს, მეორემ შეიძლება საგანძურად აღიქვას."
+      },
+      {
+        "language": "fi",
+        "text": "Se, minkä yksi ihminen pitää roskana, voi toinen pitää aarteena."
+      },
+      {
+        "language": "zh-CN",
+        "text": "一个人眼中的垃圾，在另一个人眼中可能是宝贝。"
+      },
+      {
+        "language": "eu",
+        "text": "Pertsona batek zabor gisa ikusten duena beste batentzat altxor bat izan daiteke."
+      },
+      {
+        "language": "mg",
+        "text": "Izay heverin'ny olona iray ho fako dia mety ho harena ho an'ny hafa."
+      },
+      {
+        "language": "th",
+        "text": "สิ่งที่คนหนึ่งมองว่าเป็นขยะ อาจเป็นสมบัติล้ำค่าสำหรับอีกคนหนึ่ง"
+      },
+      {
+        "language": "en",
+        "text": "What one person considers trash may be a priceless treasure to another."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Trilogie \"Hexentanz\" -- 2025",
+    "artist": "Dietmar Rabich",
+    "credit": "Own work This file was derived from: Norderney, Tonnenhof, Trilogie \"Hexentanz\" -- 2025 -- 9366.jpg Norderney, Tonnenhof, Trilogie \"Hexentanz\" -- 2025 -- 9359.jpg Norderney, Tonnenhof, Trilogie \"Hexentanz\" -- 2025 -- 9356.jpg",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Trilogie_%22Hexentanz%22_--_2025.jpg",
+    "share_alike": true,
+    "credit_line": "Trilogie \"Hexentanz\" -- 2025 · Dietmar Rabich · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 46,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 892
+  }
+}
