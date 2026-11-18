@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-18",
+  "source": {
+    "file_title": "File:Ponte Vittorio Emanuele II San Pietro, Rome, Italy.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Ponte_Vittorio_Emanuele_II_San_Pietro%2C_Rome%2C_Italy.jpg/1920px-Ponte_Vittorio_Emanuele_II_San_Pietro%2C_Rome%2C_Italy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1036,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "The winner would inherit the property acquired through war.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/the_victor_gets_the_spoils",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "The victor gets the spoils",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "勝者が戦利品を得る"
+      },
+      {
+        "language": "sw",
+        "text": "Mshindi anapata nyara za vita."
+      },
+      {
+        "language": "ka",
+        "text": "გამარჯვებული ომის ნადავლით ტკბება."
+      },
+      {
+        "language": "fi",
+        "text": "Voittaja nauttii sotasaaliista."
+      },
+      {
+        "language": "zh-CN",
+        "text": "胜利者享受战争的战利品。"
+      },
+      {
+        "language": "eu",
+        "text": "Gerrako harrapakinak gozatzen dituzte garaileek."
+      },
+      {
+        "language": "mg",
+        "text": "Ireo mpandresy dia mankafy ny babo azo tamin'ny ady."
+      },
+      {
+        "language": "th",
+        "text": "ผู้ชนะจะได้ครอบครองทรัพย์สินที่ได้มาจากการสงคราม"
+      },
+      {
+        "language": "en",
+        "text": "The winner would inherit the property acquired through war."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Ponte Vittorio Emanuele II San Pietro, Rome, Italy",
+    "artist": "Jebulon",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Ponte_Vittorio_Emanuele_II_San_Pietro,_Rome,_Italy.jpg",
+    "share_alike": true,
+    "credit_line": "Ponte Vittorio Emanuele II San Pietro, Rome, Italy · Jebulon · CC BY-SA 3.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 64,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1243
+  }
+}
