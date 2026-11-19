@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-19",
+  "source": {
+    "file_title": "File:008 Eurasian hoopoe eating in Keoladeo National Park Photo by Giles Laurent.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/008_Eurasian_hoopoe_eating_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg/1920px-008_Eurasian_hoopoe_eating_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1067,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "For some, he is a terrorist. For others, he is a fighter for freedom.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/one_man%27s_terrorist_is_another_man%27s_freedom_fighter",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "One man's terrorist is another man's freedom fighter",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "ある人にとってのテロリストは、別の人にとっての自由の戦士である。"
+      },
+      {
+        "language": "sw",
+        "text": "Gaidi kwa mtu mmoja ni mpigania uhuru kwa mwingine."
+      },
+      {
+        "language": "ka",
+        "text": "ერთისთვის ტერორისტი მეორისთვის თავისუფლებისთვის მებრძოლია."
+      },
+      {
+        "language": "fi",
+        "text": "Yhdelle terroristi, toiselle vapaustaistelija."
+      },
+      {
+        "language": "zh-CN",
+        "text": "在一些人眼里他是恐怖分子，在另一些人眼里他是自由战士。"
+      },
+      {
+        "language": "eu",
+        "text": "Batzuentzat terrorista da, besteentzat askatasunaren aldeko borrokalaria."
+      },
+      {
+        "language": "mg",
+        "text": "Ho an'ny sasany dia mpampihorohoro izy, ho an'ny hafa kosa dia mpiady ho an'ny fahafahana."
+      },
+      {
+        "language": "th",
+        "text": "สำหรับบางคน เขาคือผู้ก่อการร้าย สำหรับคนอื่นๆ เขาคือนักต่อสู้เพื่ออิสรภาพ"
+      },
+      {
+        "language": "en",
+        "text": "For some, he is a terrorist. For others, he is a fighter for freedom."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "008 Eurasian hoopoe eating in Keoladeo National Park Photo by Giles Laurent",
+    "artist": "Giles Laurent",
+    "credit": "Own work, from gileslaurent.com",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:008_Eurasian_hoopoe_eating_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg",
+    "share_alike": true,
+    "credit_line": "008 Eurasian hoopoe eating in Keoladeo National Park Photo by Giles Laurent · Giles Laurent · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 2,
+    "width": 1920,
+    "height": 1280
+  }
+}
