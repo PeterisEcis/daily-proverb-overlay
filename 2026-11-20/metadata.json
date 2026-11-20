@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-20",
+  "source": {
+    "file_title": "File:Andiast-Breil-Brigels. 24-09-2025. (d.j.b.) 08.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Andiast-Breil-Brigels._24-09-2025._%28d.j.b.%29_08.jpg/1920px-Andiast-Breil-Brigels._24-09-2025._%28d.j.b.%29_08.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 789,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "The larger the object, the greater the impact force when it falls.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/the_bigger_they_are%2C_the_harder_they_fall",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "The bigger they are, the harder they fall",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "大きいほど、落ちた時の衝撃も大きい"
+      },
+      {
+        "language": "sw",
+        "text": "Kadiri inavyokuwa kubwa, ndivyo athari inavyokuwa kubwa zaidi inapoanguka."
+      },
+      {
+        "language": "ka",
+        "text": "რაც უფრო დიდია ის, მით უფრო ძლიერია ზემოქმედება დაცემისას."
+      },
+      {
+        "language": "fi",
+        "text": "Mitä suurempi se on, sitä voimakkaampi isku putoamisen yhteydessä."
+      },
+      {
+        "language": "zh-CN",
+        "text": "体积越大，跌落时的冲击力就越大。"
+      },
+      {
+        "language": "eu",
+        "text": "Zenbat eta bolumena handiagoa izan, orduan eta handiagoa da talkaren indarra erortzean."
+      },
+      {
+        "language": "mg",
+        "text": "Arakaraka ny haben'ny zavatra no lehibe kokoa ny herin'ny fifandonana rehefa mianjera."
+      },
+      {
+        "language": "th",
+        "text": "วัตถุยิ่งมีขนาดใหญ่ แรงกระแทกจากการตกก็จะยิ่งมากขึ้น"
+      },
+      {
+        "language": "en",
+        "text": "The larger the object, the greater the impact force when it falls."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Andiast-Breil-Brigels. 24-09-2025. (d.j.b.) 08",
+    "artist": "Dominicus Johannes Bergsma.",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Andiast-Breil-Brigels._24-09-2025._(d.j.b.)_08.jpg",
+    "share_alike": true,
+    "credit_line": "Andiast-Breil-Brigels. 24-09-2025. (d.j.b.) 08 · Dominicus Johannes Bergsma. · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 49,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 946
+  }
+}
