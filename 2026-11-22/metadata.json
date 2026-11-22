@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-22",
+  "source": {
+    "file_title": "File:Red Avadavat in Baruipur September 2025 by Tisha Mukherjee 06.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Red_Avadavat_in_Baruipur_September_2025_by_Tisha_Mukherjee_06.jpg/1920px-Red_Avadavat_in_Baruipur_September_2025_by_Tisha_Mukherjee_06.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1066,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Beauty alone cannot solve the problem.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/beauty_won%27t_make_the_pot_boil",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Beauty won't make the pot boil",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "美しさだけでは鍋は沸騰しない"
+      },
+      {
+        "language": "sw",
+        "text": "Urembo pekee hautachemsha sufuria."
+      },
+      {
+        "language": "ka",
+        "text": "მხოლოდ სილამაზე ქვაბს ვერ აადუღებს."
+      },
+      {
+        "language": "fi",
+        "text": "Pelkkä kauneus ei saa kattilaa kiehumaan."
+      },
+      {
+        "language": "zh-CN",
+        "text": "单凭美貌是无法让事情水沸腾的。"
+      },
+      {
+        "language": "eu",
+        "text": "Edertasunak bakarrik ezin ditu gauzak irakiten jarri."
+      },
+      {
+        "language": "mg",
+        "text": "Tsy ny hatsaran-tarehy irery ihany no afaka mampivadi-po ny zavatra."
+      },
+      {
+        "language": "th",
+        "text": "ความสวยงามเพียงอย่างเดียวไม่สามารถทำให้สิ่งต่างๆ ผิดพลาดได้"
+      },
+      {
+        "language": "en",
+        "text": "Beauty alone cannot solve the problem."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Red Avadavat in Baruipur September 2025 by Tisha Mukherjee 06",
+    "artist": "Tisha Mukherjee",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Red_Avadavat_in_Baruipur_September_2025_by_Tisha_Mukherjee_06.jpg",
+    "share_alike": true,
+    "credit_line": "Red Avadavat in Baruipur September 2025 by Tisha Mukherjee 06 · Tisha Mukherjee · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 66,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1280
+  }
+}
