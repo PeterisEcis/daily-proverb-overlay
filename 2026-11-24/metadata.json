@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-24",
+  "source": {
+    "file_title": "File:South Panorama Taza Morocco Nov25 A7CR 09655-62 PanoC.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/South_Panorama_Taza_Morocco_Nov25_A7CR_09655-62_PanoC.jpg/1920px-South_Panorama_Taza_Morocco_Nov25_A7CR_09655-62_PanoC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 474,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "You can't catch an old bird with rice husks.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/you_can%27t_catch_old_birds_with_chaff",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "You can't catch old birds with chaff",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "老鳥を籾殻で捕まえることはできない"
+      },
+      {
+        "language": "sw",
+        "text": "Huwezi kumkamata ndege mzee mwenye maganda ya mchele."
+      },
+      {
+        "language": "ka",
+        "text": "ბრინჯის ქერქით მოხუც ფრინველს ვერ დაიჭერ."
+      },
+      {
+        "language": "fi",
+        "text": "Et voi saada vanhaa lintua kiinni riisin kuorella."
+      },
+      {
+        "language": "zh-CN",
+        "text": "你不可能用稻壳抓住一只老鸟。"
+      },
+      {
+        "language": "eu",
+        "text": "Ezin duzu txori zahar bat arroz-azal batekin harrapatu."
+      },
+      {
+        "language": "mg",
+        "text": "Tsy afaka misambotra vorona antitra amin'ny akoran-bary ianao."
+      },
+      {
+        "language": "th",
+        "text": "คุณไม่สามารถจับนกแก่ด้วยแกลบข้าวได้หรอก"
+      },
+      {
+        "language": "en",
+        "text": "You can't catch an old bird with rice husks."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "South Panorama Taza Morocco Nov25 A7CR 09655-62 PanoC",
+    "artist": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract.",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:South_Panorama_Taza_Morocco_Nov25_A7CR_09655-62_PanoC.jpg",
+    "share_alike": true,
+    "credit_line": "South Panor… · This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but please mention me as the author. I would much appreciate if you send me an email tagooty@yahoo.com or write on my talk page, for my information. Please contact me before commercial use. Please do not upload an edited image here without consulting me. I would like to make corrections only at my own source to ensure that the changes improve the image and are preserved. Otherwise you may upload an edited image with a new name. Please use one of the templates derivative or extract. · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 29,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 569
+  }
+}
