@@ -1,0 +1,77 @@
+{
+  "generator": {
+    "name": "daily-proverb-overlay",
+    "version": "0.1.0"
+  },
+  "date": "2026-11-26",
+  "source": {
+    "file_title": "File:Male wild turkey (Meleagris gallopavo) strutting.jpg",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Male_wild_turkey_%28Meleagris_gallopavo%29_strutting.jpg/1920px-Male_wild_turkey_%28Meleagris_gallopavo%29_strutting.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "reported_width": 1600,
+    "reported_height": 1600,
+    "mime": "image/jpeg"
+  },
+  "quote": {
+    "text": "Poverty is a psychological state.",
+    "author": null,
+    "source": "https://en.wiktionary.org/wiki/poverty_is_a_state_of_mind",
+    "provider": "wiktionary",
+    "is_placeholder": false,
+    "original_text": "Poverty is a state of mind",
+    "translations": [
+      {
+        "language": "ja",
+        "text": "貧困とは心の状態である"
+      },
+      {
+        "language": "sw",
+        "text": "Umaskini ni hali ya akili."
+      },
+      {
+        "language": "ka",
+        "text": "სიღარიბე გონების მდგომარეობაა."
+      },
+      {
+        "language": "fi",
+        "text": "Köyhyys on mielentila."
+      },
+      {
+        "language": "zh-CN",
+        "text": "贫穷是一种心态。"
+      },
+      {
+        "language": "eu",
+        "text": "Pobrezia gogo-egoera bat da."
+      },
+      {
+        "language": "mg",
+        "text": "Toe-tsaina ny fahantrana."
+      },
+      {
+        "language": "th",
+        "text": "ความยากจนเป็นสภาวะทางจิตใจ"
+      },
+      {
+        "language": "en",
+        "text": "Poverty is a psychological state."
+      }
+    ]
+  },
+  "attribution": {
+    "title": "Male wild turkey (Meleagris gallopavo) strutting",
+    "artist": "Frank Schulenburg",
+    "credit": "Own work",
+    "license_short_name": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "file_page_url": "https://commons.wikimedia.org/wiki/File:Male_wild_turkey_(Meleagris_gallopavo)_strutting.jpg",
+    "share_alike": true,
+    "credit_line": "Male wild turkey (Meleagris gallopavo) strutting · Frank Schulenburg · CC BY-SA 4.0"
+  },
+  "render": {
+    "font": "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "quote_font_size": 99,
+    "quote_lines": 1,
+    "width": 1920,
+    "height": 1920
+  }
+}
